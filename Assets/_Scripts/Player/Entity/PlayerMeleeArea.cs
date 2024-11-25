@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class PlayerMeleeArea : MonoBehaviour {
     
@@ -15,14 +16,14 @@ public class PlayerMeleeArea : MonoBehaviour {
                                    pushStrength, pushDuration;
 
     [SerializeField] private Collider areaCollider;
-    [SerializeField] private ParticleSystem areaParticles;
+    [SerializeField] private VisualEffect areaParticles;
 
     private float timer;
 
     public void DoMelee(Player playerSource, float attackDuration) {
         this.playerSource = playerSource;
         timer = attackDuration;
-        areaParticles.Play();
+        areaParticles.Reinit();
 
         enabled = true;
         areaCollider.enabled = true;
@@ -39,14 +40,12 @@ public class PlayerMeleeArea : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
         if (other.TryGetComponent(out BaseObject baseObject)
-            && !(baseObject is Entity 
-                 && (baseObject as Entity).Faction == EntityFaction.Friendly)
+            && !baseObject.IsFaction(EntityFaction.Friendly)
             && collSet.Add(baseObject) && playerSource) {
 
-            baseObject.TryDamage(damageAmount);
+            baseObject.TryDamage(damageAmount, ElementType.Siphon);
             playerSource.ManaSource.Fill(manaPerHit);
-            baseObject.TryStagger(staggerDuration);
-
+            baseObject.TryStagger(staggerDuration, true);
             Vector3 direction = baseObject.transform.position - SourcePosition;
             if (baseObject.TryLongPush(direction, pushStrength, pushDuration,
                                        out PushActionCore actionCore)) {
