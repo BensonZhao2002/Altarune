@@ -14,7 +14,8 @@ public class PawSlam : MonoBehaviour {
     [SerializeField] private AnimationCurve growthCurve;
 
     private void Awake() {
-        outerEpicenter.OnEntityEnter += OuterEpicenter_OnEntityEnter;
+        transform.SetParent(null);
+        outerEpicenter.OnObjectEnter += OuterEpicenter_OnObjectEnter;
     }
 
     public void DoSlam(Vector3 source, float duration) {
@@ -40,14 +41,14 @@ public class PawSlam : MonoBehaviour {
         gameObject.SetActive(false);
     }
 
-    private void OuterEpicenter_OnEntityEnter(Entity entity) {
-        StartCoroutine(IContactCheck(entity));
+    private void OuterEpicenter_OnObjectEnter(BaseObject baseObject) {
+        StartCoroutine(IContactCheck(baseObject));
     }
 
-    private IEnumerator IContactCheck(Entity entity) {
+    private IEnumerator IContactCheck(BaseObject baseObject) {
         yield return new WaitForFixedUpdate();
-        if (!innerEpicenter.contactSet.Contains(entity)) {
-            entity.TryDamage(damageAmount);
+        if (!innerEpicenter.contactSet.Contains(baseObject)) {
+            baseObject.TryDamage(damageAmount);
         }
     }
 
