@@ -49,7 +49,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectBody: {fileID: 1029671058298063787}
   settings: {fileID: 11400000, guid: 0c0b6eca5d8c39d418355c19867551fd, type: 2}
-  manaDepletion: 1
   projectilePrefab: {fileID: 3782081999992796225, guid: 32be2cb499d9b7e4b933102b06800742,
     type: 3}
   launchPoint: {fileID: 2550746929009170975}
@@ -369,6 +368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InteractionCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777240434262767629, guid: 5f47ff42168425b45b7bac328e5c5298,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
