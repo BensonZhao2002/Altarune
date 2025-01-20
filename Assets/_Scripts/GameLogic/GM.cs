@@ -34,6 +34,9 @@ public class GM : MonoBehaviour {
     [SerializeField] private RoomManager roomManager;
     public static RoomManager RoomManager => instance.roomManager;
 
+    [SerializeField] private LevelStateManager levelStateManager;
+    public static LevelStateManager LeveStateManager => instance.levelStateManager;
+
     [SerializeField] private RunManager runManager;
     public static RunManager RunManager => instance.runManager;
 
@@ -59,13 +62,14 @@ public class GM : MonoBehaviour {
         }
     }
 
-    public void DoGameOver() {
-        StartCoroutine(RestartScene());
+    void Update() {
+        if (Input.GetKey(KeyCode.LeftControl)
+                && Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
     }
 
-    private IEnumerator RestartScene() {
-        transitionManager.FadeOut();
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    public void DoGameOver() {
+        RoomManager.MoveToRoom(RoomTag.Lab);
     }
 }
