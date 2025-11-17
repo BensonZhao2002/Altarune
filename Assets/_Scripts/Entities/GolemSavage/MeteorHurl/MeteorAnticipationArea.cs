@@ -22,7 +22,7 @@ public class MeteorAnticipationArea : MonoBehaviour {
     private IEnumerator IDoArea(Vector3 targetSize) {
         float lerpVal = 0;
         while (Vector3.Distance(decal.transform.localScale, targetSize) > 0) {
-            lerpVal = Mathf.MoveTowards(lerpVal, 1, growTime == 0 ? Mathf.Infinity : (Time.deltaTime / growTime));
+            lerpVal = Mathf.MoveTowards(lerpVal, 1, Time.deltaTime.SafeDivide(growTime));
             decal.transform.localScale = Vector3.Lerp(Vector3.zero, targetSize, lerpVal);
             yield return null;
         }

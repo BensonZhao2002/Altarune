@@ -14,8 +14,7 @@ public class CanvasGroupFader : MonoBehaviour
     public IEnumerator IDoFade(bool on) {
         float target = on ? 1 : 0;
         while (Mathf.Abs(target - canvasGroup.alpha) > 0) {
-            canvasGroup.alpha = Mathf.MoveTowards(canvasGroup.alpha, target,
-                                                  fadeTime == 0 ? Mathf.Infinity : Time.unscaledDeltaTime / fadeTime);
+            canvasGroup.alpha = Mathf.MoveTowards(canvasGroup.alpha, target, Time.unscaledDeltaTime.SafeDivide(fadeTime));
             yield return null;
         }
     }

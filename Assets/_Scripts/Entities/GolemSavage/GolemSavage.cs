@@ -7,7 +7,7 @@ public enum SavagePhase { Phase1 = 0, Phase2 = 1, Phase3 = 2 }
 
 public partial class GolemSavage : Entity {
 
-    public event System.Action<int> OnPhaseTransition;
+    public event System.Action<SavagePhase, int> OnPhaseTransition;
 
     private const string WALK_SPEED_PARAM = "WalkSpeed";
 
@@ -78,6 +78,17 @@ public partial class GolemSavage : Entity {
         macroMachine.Update();
         microMachine.Update();
         animator.SetFloat(speedParam, navMeshAgent.velocity.sqrMagnitude / Mathf.Max(1, baseLinearSpeed));
+        //if (Input.GetKeyDown(KeyCode.O)) {
+        //    TryDamage(5);
+        //}
+        //if (Input.GetKeyDown(KeyCode.I)) {
+        //    for (int i = 0; i < earthTornadoSiftlings.Length; i++) {
+        //        if (earthTornadoSiftlings[i] && !earthTornadoSiftlings[i].Perished) {
+        //            earthTornadoSiftlings[i].Perish();
+        //            break;
+        //        }
+        //    }
+        //}
         //if (Input.GetKeyDown(KeyCode.Semicolon)) Perish();
     }
 
@@ -92,7 +103,7 @@ public partial class GolemSavage : Entity {
     public void DoPhaseTransition() {
         if (configMap.ContainsKey(stagingPhase)) {
             activeConfig = configMap[stagingPhase];
-            OnPhaseTransition?.Invoke(activeConfig.health);
+            OnPhaseTransition?.Invoke(stagingPhase, activeConfig.health);
         }
 
         PhaseState nextState = stagingPhase == SavagePhase.Phase1 ? new PhaseState_Phase1()

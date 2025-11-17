@@ -24,7 +24,7 @@ public abstract partial class BaseObject {
     /// • Returns 0 if damageable and not alive; <br/>
     /// • Returns -1 if not damageable;
     /// </summary>
-    public int Health {
+    public virtual int Health {
         get {
             EventResponse<int> response = new();
             OnTryRequestHealth?.Invoke(response);

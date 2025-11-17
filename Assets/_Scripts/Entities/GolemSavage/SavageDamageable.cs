@@ -11,7 +11,13 @@ public class SavageDamageable : Damageable {
         golemSavage.OnPhaseTransition += GolemSavage_OnPhaseTransition;
     }
 
-    private void GolemSavage_OnPhaseTransition(int maxHealth) {
+    public override void Detach() {
+        base.Detach();
+        GolemSavage golemSavage = baseObject as GolemSavage;
+        golemSavage.OnPhaseTransition -= GolemSavage_OnPhaseTransition;
+    }
+
+    private void GolemSavage_OnPhaseTransition(SavagePhase _, int maxHealth) {
         runtimeHP.UpdateMaxHealth(maxHealth);
     }
 

@@ -39,8 +39,7 @@ public class TransitionManager : MonoBehaviour {
         float alpha = image.color.a;
         float target = on ? 1 : 0;
         while (Mathf.Abs(alpha - target) > 0) {
-            alpha = Mathf.MoveTowards(alpha, target,
-                                      fadeTime == 0 ? Mathf.Infinity : Time.unscaledDeltaTime / fadeTime);
+            alpha = Mathf.MoveTowards(alpha, target, Time.unscaledDeltaTime.SafeDivide(fadeTime));
             image.color = new Color(image.color.r, image.color.g,
                                     image.color.g, alpha);
             yield return null;

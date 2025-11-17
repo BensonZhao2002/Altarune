@@ -13,6 +13,8 @@
             if (sg.configMap.ContainsKey(Phase)) {
                 sg.activeConfig = sg.configMap[Phase];
                 sg.stagingHealth = sg.activeConfig.crystalHealth;
+                sg.PropagateMacroTransition(Phase);
+                sg.ConfirmStageAdvancement();
             }
         }
 

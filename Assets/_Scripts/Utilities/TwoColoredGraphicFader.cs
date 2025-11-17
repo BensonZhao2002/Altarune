@@ -47,8 +47,8 @@ public class TwoColoredGraphicFader : MonoBehaviour {
         while (Mathf.Abs(alpha1 - target) > 0
                 || Mathf.Abs(alpha2 - target) > 0) {
 
-            alpha1 = Mathf.MoveTowards(alpha1, target, fadeTime == 0 ? Mathf.Infinity : (Time.deltaTime / fadeTime));
-            alpha2 = Mathf.MoveTowards(alpha2, target, fadeTime == 0 ? Mathf.Infinity : (Time.deltaTime / fadeTime));
+            alpha1 = Mathf.MoveTowards(alpha1, target, Time.deltaTime.SafeDivide(fadeTime));
+            alpha2 = Mathf.MoveTowards(alpha2, target, Time.deltaTime.SafeDivide(fadeTime));
 
             color1.a = alpha1;
             color2.a = alpha2;

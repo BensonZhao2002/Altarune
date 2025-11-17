@@ -19,18 +19,18 @@ public class SovereignSwipingLaserMaster : SovereignPhaseMaster<SwipingLaserProp
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Y)) {
-            EnterPhase(SovereignPhase.Macro2);
-            DoAttack();
-        }
-        if (Input.GetKeyDown(KeyCode.U)) {
-            EnterPhase(SovereignPhase.Macro3);
-            DoAttack();
-        }
-        if (Input.GetKeyDown(KeyCode.I)) {
-            EnterPhase(SovereignPhase.Macro4);
-            DoAttack();
-        }
+        //if (Input.GetKeyDown(KeyCode.Y)) {
+        //    EnterPhase(SovereignPhase.Macro2);
+        //    DoAttack();
+        //}
+        //if (Input.GetKeyDown(KeyCode.U)) {
+        //    EnterPhase(SovereignPhase.Macro3);
+        //    DoAttack();
+        //}
+        //if (Input.GetKeyDown(KeyCode.I)) {
+        //    EnterPhase(SovereignPhase.Macro4);
+        //    DoAttack();
+        //}
     }
 
     public void DoAttack() {

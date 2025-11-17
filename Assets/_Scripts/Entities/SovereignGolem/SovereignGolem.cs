@@ -5,6 +5,7 @@ public enum SovereignPhase { None = 0, Macro1 = 1, Macro2 = 2, Macro3 = 3, Macro
 
 public partial class SovereignGolem : Entity {
 
+    public event System.Action<SovereignPhase, int> OnPhaseTransition;
     private const string ACTIVATION_TRIGGER = "Activate";
 
     [Header("General")]
@@ -15,13 +16,18 @@ public partial class SovereignGolem : Entity {
     [SerializeField] private SovereignSpawnMaster crystalSpawner,
                                                   golemSpawner;
 
+    public int ConfigurationAmount => configurations.Length;
+    public override int Health => stagingHealth;
+
     private readonly Dictionary<SovereignPhase, MacroStateConfiguration> configMap = new();
     private MacroStateConfiguration activeConfig;
 
     private readonly StateMachine<Sovereign_Input> macroMachine = new();
     private readonly StateMachine<Sovereign_Input> microMachine = new();
+
     private SovereignPhase stagingPhase = SovereignPhase.None;
     private int stagingHealth;
+    private bool willAdvanceStage = true;
 
     void Awake() {
         crystalSpawner.OnSpawnPerish += CrystalSpawner_OnSpawnPerish;
@@ -37,6 +43,12 @@ public partial class SovereignGolem : Entity {
 
     protected override void Update() {
         base.Update();
+        if (Input.GetKeyDown(KeyCode.P)) {
+            BeginBossFight();
+        }
+        if (Input.GetKeyDown(KeyCode.E)) {
+            CrystalSpawner_OnSpawnPerish();
+        }
         if (macroMachine.StateInput != null) {
             macroMachine.Update();
             if (microMachine.StateInput != null) {
@@ -61,19 +73,34 @@ public partial class SovereignGolem : Entity {
 
         if (stagingPhase == SovereignPhase.None) {
             microMachine.Init(new Sovereign_Input(macroMachine, this),
-                              new State_Roar());
+                              new State_Empty());
             macroMachine.StateInput.InflateMicro(microMachine);
             microMachine.StateInput.InflateMicro(microMachine);
             stagingPhase = SovereignPhase.Macro1;
+            willAdvanceStage = false;
+
+            microMachine.SetState(new State_Roar(false));
         }
+    }
+
+    private void PropagateMacroTransition(SovereignPhase phase) {
+        if ((int) phase > 4) return;
+        OnPhaseTransition?.Invoke(phase, configurations[(int) phase - 1].crystalHealth);
     }
 
     private void CrystalSpawner_OnSpawnPerish() {
         stagingHealth--;
-        if (stagingHealth <= 0) {
+        if (stagingHealth >= 0) PropagateDamage(1);
+
+        if (!willAdvanceStage
+                && stagingHealth <= 0
+                    && activeConfig != null) {
+            willAdvanceStage = true;
             stagingPhase = activeConfig.phase + 1;
         }
     }
+
+    private void ConfirmStageAdvancement() => willAdvanceStage = false;
 
     public void Animator_OnSlamLanding(LeftOrRight leftOrRight) {
         pawSlamMaster.TrySlam(leftOrRight);
@@ -85,15 +112,21 @@ public partial class SovereignGolem : Entity {
 
     private void PhaseMaster_OnAttackEnd() {
         if (macroMachine.StateInput == null
-            || microMachine.State is State_Idle
-            || microMachine.State is State_Roar
-            || microMachine.State is State_Perish) return;
+                || microMachine.State is State_Idle
+                    || microMachine.State is State_Roar
+                        || microMachine.State is State_Perish) return;
+        if (macroMachine.StateInput.microMachine == null) Debug.LogWarning("Micro Machine was null, good luck!");
         macroMachine.StateInput.microMachine
         .SetState(new State_Idle(macroMachine.StateInput.CurrentPhase));
     }
 
     private void Perish() {
+        base.Perish();
         crystalSpawner.OnSpawnPerish -= CrystalSpawner_OnSpawnPerish;
+        staticLaserMaster.OnAttackEnd -= PhaseMaster_OnAttackEnd;
+        swipingLaserMaster.OnAttackEnd -= PhaseMaster_OnAttackEnd;
+        pawSlamMaster.OnAttackEnd -= PhaseMaster_OnAttackEnd;
+        collapsionSlamMaster.OnCollapsionEnd -= PhaseMaster_OnAttackEnd;
         crystalSpawner.EnterPhase(SovereignPhase.None);
         golemSpawner.EnterPhase(SovereignPhase.None);
     }
@@ -132,7 +165,7 @@ public partial class SovereignGolem {
                 macroState.PickAttack(input);
             }
             if (phase != input.sovereign.stagingPhase
-                && input.microMachine.State is not State_Roar) {
+                    && input.microMachine.State is not State_Roar) {
                 input.microMachine.SetState(new State_Roar());
             }
         }
@@ -149,7 +182,12 @@ public partial class SovereignGolem {
 
     public class State_Roar : State<Sovereign_Input> {
 
+        private readonly bool willPromptTransition;
         private float timer;
+
+        public State_Roar(bool promptTransition = true) {
+            this.willPromptTransition = promptTransition;
+        }
 
         public override void Enter(Sovereign_Input input) {
             SovereignGolem sg = input.sovereign;
@@ -161,7 +199,9 @@ public partial class SovereignGolem {
             timer += Time.deltaTime;
             if (timer > input.sovereign.roarClip.length) {
                 SovereignGolem sg = input.sovereign;
-                sg.DoMacroTransition();
+
+                if (willPromptTransition) sg.DoMacroTransition();
+
                 if (input.macroMachine.State is MacroState_Macro3) {
                     input.microMachine.SetState(new State_CollapsionSlam());
                 } else {
@@ -302,6 +342,16 @@ public partial class SovereignGolem {
             sg.animator.SetTrigger(DEATH_ANIM_TRIGGER);
             sg.endCutscene.DoAnimation(sg.deathAnimationClip.length);
         }
+
+        public override void Update(Sovereign_Input _) { }
+
+        public override void Exit(Sovereign_Input _) { }
+    }
+}
+
+public partial class SovereignGolem {
+    public class State_Empty : State<Sovereign_Input> {
+        public override void Enter(Sovereign_Input _) { }
 
         public override void Update(Sovereign_Input _) { }
 
