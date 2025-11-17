@@ -41,7 +41,7 @@ public class Meteor : MonoBehaviour {
 
         float lerpVal = 0;
         while (Vector3.Distance(transform.localScale, size) > 0) {
-            lerpVal = Mathf.MoveTowards(lerpVal, 1, duration == 0 ? Mathf.Infinity : (Time.deltaTime / duration));
+            lerpVal = Mathf.MoveTowards(lerpVal, 1, Time.deltaTime.SafeDivide(duration));
             transform.localScale = Vector3.Lerp(initialSize, size, lerpVal);
             yield return null;
         }

@@ -21,9 +21,9 @@ public class CollapsionSlamMaster : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.L)) {
-            DoAttack();
-        }
+        //if (Input.GetKeyDown(KeyCode.L)) {
+        //    DoAttack();
+        //}
     }
 
     public void DoAttack() {

@@ -37,7 +37,7 @@ public class GraphicFader : MonoBehaviour {
         Color color = mpb.GetColor(COLOR_PARAM);
         float alpha = color.a;
         while (Mathf.Abs(alpha - target) > 0) {
-            alpha = Mathf.MoveTowards(alpha, target, fadeTime == 0 ? Mathf.Infinity : (Time.deltaTime / fadeTime));
+            alpha = Mathf.MoveTowards(alpha, target, Time.deltaTime.SafeDivide(fadeTime));
             color.a = alpha;
             mpb.SetColor(COLOR_PARAM, color);
             decal.SetPropertyBlock(mpb);

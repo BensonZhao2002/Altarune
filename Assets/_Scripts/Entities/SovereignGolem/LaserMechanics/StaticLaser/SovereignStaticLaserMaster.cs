@@ -25,22 +25,22 @@ public class SovereignStaticLaserMaster : SovereignPhaseMaster<StaticLaserProper
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Z)) {
-            EnterPhase(SovereignPhase.Macro1);
-            DoAttack();
-        }
-        if (Input.GetKeyDown(KeyCode.X)) {
-            EnterPhase(SovereignPhase.Macro2);
-            DoAttack();
-        }
-        if (Input.GetKeyDown(KeyCode.C)) {
-            EnterPhase(SovereignPhase.Macro3);
-            DoAttack();
-        }
-        if (Input.GetKeyDown(KeyCode.V)) {
-            EnterPhase(SovereignPhase.Macro4);
-            DoAttack();
-        }
+        //if (Input.GetKeyDown(KeyCode.Z)) {
+        //    EnterPhase(SovereignPhase.Macro1);
+        //    DoAttack();
+        //}
+        //if (Input.GetKeyDown(KeyCode.X)) {
+        //    EnterPhase(SovereignPhase.Macro2);
+        //    DoAttack();
+        //}
+        //if (Input.GetKeyDown(KeyCode.C)) {
+        //    EnterPhase(SovereignPhase.Macro3);
+        //    DoAttack();
+        //}
+        //if (Input.GetKeyDown(KeyCode.V)) {
+        //    EnterPhase(SovereignPhase.Macro4);
+        //    DoAttack();
+        //}
     }
 
     public void DoAttack() {

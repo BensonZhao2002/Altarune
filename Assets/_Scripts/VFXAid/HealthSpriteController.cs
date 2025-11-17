@@ -27,7 +27,7 @@ public class HealthSpriteController : MonoBehaviour {
         float target = on ? 0 : 0.98f;
         float lerpVal = animator.GetFloat(dissolveParam);
         while (Mathf.Abs(lerpVal - target) > 0) {
-            lerpVal = Mathf.MoveTowards(lerpVal, target, animationLength == 0 ? Mathf.Infinity : (Time.deltaTime / animationLength));
+            lerpVal = Mathf.MoveTowards(lerpVal, target, Time.deltaTime.SafeDivide(animationLength));
             animator.SetFloat(dissolveParam, lerpVal);
             yield return null;
         }

@@ -43,14 +43,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _HighlightFeather: 32
-    - _HighlightIntensity: 0
-    - _HighlightLerp: 0
+    - _HighlightIntensity: 0.218
+    - _HighlightLerp: 0.965
     - _HighlightWidth: 8
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _BarColor: {r: 0, g: 0.008930683, b: 1, a: 1}
-    - _HighlightColor: {r: 0.13679248, g: 0.1474935, b: 1, a: 1}
+    - _BarColor: {r: 0.8666667, g: 0.26666668, b: 0.20784314, a: 1}
+    - _HighlightColor: {r: 1, g: 0.1717418, b: 0.1372549, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &8318938438520333115
 MonoBehaviour:

@@ -31,8 +31,8 @@ public class MeteorAnticipationGraphic : MonoBehaviour {
         float target = on ? 1 : 0;
         while (Mathf.Abs(color1.a - target) > 0
                 || Mathf.Abs(color2.a - target) > 0) {
-            color1.a = Mathf.MoveTowards(color1.a, target, fadeTime == 0 ? Mathf.Infinity : (Time.deltaTime / fadeTime));
-            color2.a = Mathf.MoveTowards(color2.a, target, fadeTime == 0 ? Mathf.Infinity : (Time.deltaTime / fadeTime));
+            color1.a = Mathf.MoveTowards(color1.a, target, Time.deltaTime.SafeDivide(fadeTime));
+            color2.a = Mathf.MoveTowards(color2.a, target, Time.deltaTime.SafeDivide(fadeTime));
             mpb.SetColor(COLOR_PARAM, color1);
             mpb.SetColor(COLOR_2_PARAM, color2);
             decal.SetPropertyBlock(mpb);

@@ -31,18 +31,18 @@ public class PawSlamMaster : SovereignPhaseMaster<PawSlamProperties> {
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.G)) {
-            EnterPhase(SovereignPhase.Macro2);
-            DoAttack();
-        }
-        if (Input.GetKeyDown(KeyCode.H)) {
-            EnterPhase(SovereignPhase.Macro3);
-            DoAttack();
-        }
-        if (Input.GetKeyDown(KeyCode.J)) {
-            EnterPhase(SovereignPhase.Macro4);
-            DoAttack();
-        }
+        //if (Input.GetKeyDown(KeyCode.G)) {
+        //    EnterPhase(SovereignPhase.Macro2);
+        //    DoAttack();
+        //}
+        //if (Input.GetKeyDown(KeyCode.H)) {
+        //    EnterPhase(SovereignPhase.Macro3);
+        //    DoAttack();
+        //}
+        //if (Input.GetKeyDown(KeyCode.J)) {
+        //    EnterPhase(SovereignPhase.Macro4);
+        //    DoAttack();
+        //}
     }
 
     public void DoAttack() {

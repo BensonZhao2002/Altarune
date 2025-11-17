@@ -9,9 +9,9 @@ public class CheckpointAltar : MonoBehaviour {
     [SerializeField] private float healTickInterval;
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.P)) {
-            GM.Player.TryDamage(1);
-        }
+        //if (Input.GetKeyDown(KeyCode.P)) {
+        //    GM.Player.TryDamage(1);
+        //}
     }
 
     void OnTriggerEnter(Collider other) {
