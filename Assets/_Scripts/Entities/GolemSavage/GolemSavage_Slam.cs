@@ -24,6 +24,8 @@ public partial class GolemSavage {
             gs.navMeshAgent.enabled = false;
             gs.animator.SetTrigger(SLAM_TRIGGER);
             timer = gs.slamClip.length;
+
+            AkSoundEngine.PostEvent("Savage_Slam", input.savage.gameObject);
         }
 
         public override void Update(Savage_Input input) {

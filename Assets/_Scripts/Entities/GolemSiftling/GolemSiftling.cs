@@ -114,6 +114,9 @@ public partial class GolemSiftling : Entity {
 
     public void Animator_OnAscensionRisen() {
         activeConfig.tornado.Toggle(true);
+
+        AkSoundEngine.SetSwitch("Siftling_Tornado", activeConfig.type.ToString(), gameObject);
+        AkSoundEngine.PostEvent("Siftling_Tornado", gameObject);
     }
 
     public void Tornado_OnTornadoSummoned() {
@@ -132,6 +135,8 @@ public partial class GolemSiftling : Entity {
     }
 
     public override void Perish(bool immediate = false) {
+        AkSoundEngine.StopAll(gameObject);
+
         base.Perish(immediate);
         DetachModules();
 

@@ -10,6 +10,8 @@ public class TowerPlague : Summon {
 
     void Awake() {
         plagueArea.EntityID = GetInstanceID();
+
+        AkSoundEngine.PostEvent("Plague_Bubble", gameObject);
     }
 
     void Update() {
@@ -17,6 +19,12 @@ public class TowerPlague : Summon {
         if (timer <= 0) {
             timer = launchInterval;
             plagueArea.DoWave();
+
+            AkSoundEngine.PostEvent("Plague_Shot", gameObject);
         }
+    }
+
+    private void OnDestroy() {
+        AkSoundEngine.StopAll(gameObject);
     }
 }

@@ -217,6 +217,8 @@ public partial class Bat {
             bat.BaseAnimatorSpeed = bat.aggroAnimationSpeed;
             pacifyTimer = bat.aggroPacifyTime;
             bat.limiter.MaxVelocity = bat.aggroMaxVelocity;
+
+            AkSoundEngine.PostEvent("Bat_FlyAggro", bat.gameObject);
         }
 
         public override void Update(Bat_Input input) {

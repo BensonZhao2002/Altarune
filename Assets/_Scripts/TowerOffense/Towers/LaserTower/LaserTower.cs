@@ -62,6 +62,9 @@ public class LaserTower : Summon {
 				animator.PlayLaser(Quaternion.LookRotation(closestEnemy.transform.position - gameObject.transform.position));
 
 				attackTick = 0;
+
+				closestEnemy.TryDamage(1);
+				AkSoundEngine.PostEvent("Laser_Beam", gameObject);
 			}
 		} else {
 			if (attackTick >= altAttackCooldown) {
@@ -87,5 +90,9 @@ public class LaserTower : Summon {
 			}
 		}
 		
+	}
+
+    private void OnDestroy() {
+		AkSoundEngine.PostEvent("StopAll", gameObject);
 	}
 }

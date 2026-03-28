@@ -189,6 +189,8 @@ public partial class GolemSavage : Entity {
                 siftling.Perish();
             }
             ResetMaterials();
+
+            AkSoundEngine.SetState("Music", "Checkpoint");
         }
     }
 

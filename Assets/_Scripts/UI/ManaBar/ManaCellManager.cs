@@ -12,7 +12,11 @@ public class ManaCellManager : MonoBehaviour {
     private int lastActiveIndex = -1;
     private int highlightCost = -1;
 
+    private bool isInitializing = false;
+
     public void Init(int cellAmount, int activeAmount) {
+        isInitializing = true;
+
         cellArray = new ManaCell[cellAmount];
         float cellSpacing = 1f / cellAmount;
 
@@ -25,6 +29,8 @@ public class ManaCellManager : MonoBehaviour {
         ActivateCells(activeAmount);
 
         summonController.OnSummonSelected += SummonController_OnSummonSelected;
+
+        isInitializing = false;
     }
 
     public void ActivateCells(int cellAmount) {
@@ -39,6 +45,8 @@ public class ManaCellManager : MonoBehaviour {
         lastActiveIndex = Mathf.Min(cellArray.Length - 1, lastActiveIndex + 1);
         cellArray[lastActiveIndex].DoCharge();
         UpdateCellStatus();
+
+        if (!isInitializing) AkSoundEngine.PostEvent("Mana_Cell_Fill", gameObject);
     }
 
     private void DeactivateCell() {

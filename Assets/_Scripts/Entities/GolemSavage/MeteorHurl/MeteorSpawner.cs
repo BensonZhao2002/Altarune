@@ -34,6 +34,8 @@ public class MeteorSpawner : MonoBehaviour {
 
     public void DoMeteorHurl(int amount, float intervalTime,
                              float riseDuration, float fallDuration) {
+        AkSoundEngine.PostEvent("Savage_Meteor_Slam", gameObject);
+
         StartCoroutine(IDoMeteorHurl(amount, intervalTime,
                                      riseDuration, fallDuration));
     }
@@ -44,6 +46,7 @@ public class MeteorSpawner : MonoBehaviour {
         float duration = riseDuration / amount;
         for (int i = 0; i < amount; i++) {
             meteors[i].DoRise(RandomSpawnPosition, RandomSize, duration);
+            AkSoundEngine.PostEvent("Savage_Meteor_Rise", gameObject);
             yield return new WaitForSeconds(intervalTime);
         }
 
@@ -53,6 +56,7 @@ public class MeteorSpawner : MonoBehaviour {
         duration = fallDuration / amount;
         for (int i = 0; i < amount; i++) {
             meteors[i].DoFall(duration);
+            AkSoundEngine.PostEvent("Savage_Meteor_Fall", gameObject);
             yield return new WaitForSeconds(intervalTime);
         }
     }

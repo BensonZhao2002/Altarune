@@ -34,6 +34,8 @@ public class LightningChainTower : Summon
             projectile.OnTimeOut += RemoveBall;
             balls.Enqueue(projectile);
             projectile.Launch(transform.position, Summoner.transform.position);
+
+            AkSoundEngine.PostEvent("LightningChain_Launch", gameObject);
         }
     }
 

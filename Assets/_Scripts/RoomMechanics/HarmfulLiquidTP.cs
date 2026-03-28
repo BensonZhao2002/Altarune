@@ -8,6 +8,8 @@ public class HarmfulLiquidTP : MonoBehaviour {
         if (other.TryGetComponent(out Player player)) {
             player.TryDamage(1);
             player.TryTeleport(player.LastGroundPoint + Vector3.up * 0.5f);
+
+            AkSoundEngine.PostEvent("Yan_Teleport", gameObject);
         }
     }
 }

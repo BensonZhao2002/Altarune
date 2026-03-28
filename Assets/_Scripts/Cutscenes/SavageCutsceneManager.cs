@@ -62,18 +62,28 @@ public class SavageCutsceneManager : MonoBehaviour {
         }
         StartCoroutine(Decal());
         DOTween.To(() => light.intensity, x => light.intensity = x, 100, 2f);
+
+        AkSoundEngine.PostEvent("Savage_CutScene_Rumble", gameObject);
+
         yield return new WaitForSeconds(spinDelay);
         cutsceneAnimator.SetTrigger(SPIN_START_PARAM);
+
+        AkSoundEngine.PostEvent("Savage_CutScene_Roar", gameObject);
+
         yield return new WaitForSeconds(wireDelay);
         // foreach (Rigidbody rigidbody in wireConnectors) {
         //     rigidbody.useGravity = true;
         // }
 
         yield return new WaitForSeconds(0.8f);
-        musicTrigger.Play();
+        //musicTrigger.Play();
+        AkSoundEngine.SetState("Music", "Combat_Sovereign");
         StartCoroutine(UI());
         vCam.m_Priority = 100;
         bigDust.Play();
+
+        AkSoundEngine.PostEvent("Savage_CutScene_Dust", gameObject);
+
         Time.timeScale = 0.5f;
         yield return new WaitForSeconds(2.5f);
         Time.timeScale = 1f;

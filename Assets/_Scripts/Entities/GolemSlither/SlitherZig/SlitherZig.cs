@@ -67,6 +67,8 @@ public class SlitherZig : MonoBehaviour {
             zScale = (newPosition1 - originalPosition).magnitude;
             zigHitbox1.Generate(position, rotation, zScale, newPosition1);
 
+            AkSoundEngine.PostEvent("Slither_Zig_Warn", gameObject);
+
             yield return new WaitForSeconds(hitboxShowDelay);
         }
 
@@ -79,6 +81,8 @@ public class SlitherZig : MonoBehaviour {
             zScale = (newPosition2 - newPosition1).magnitude;
             zigHitbox2.Generate(position, rotation, zScale, newPosition2);
 
+            AkSoundEngine.PostEvent("Slither_Zig_Warn", gameObject);
+
             yield return new WaitForSeconds(hitboxShowDelay);
         }
 
@@ -90,6 +94,8 @@ public class SlitherZig : MonoBehaviour {
             rotation = Quaternion.LookRotation(newPosition3 - newPosition2);
             zScale = (newPosition3 - newPosition2).magnitude;
             zigHitbox3.Generate(position, rotation, zScale, newPosition3);
+
+            AkSoundEngine.PostEvent("Slither_Zig_Warn", gameObject);
 
             yield return new WaitForSeconds(hitboxShowDelay);
         }

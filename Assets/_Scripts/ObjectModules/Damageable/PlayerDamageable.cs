@@ -31,6 +31,8 @@ public class PlayerDamageable : Damageable {
                 GM.ScreenEffectManager.HitEffect();
                 /// Camera Shake
                 GM.CameraShakeManager.DoCameraShake();
+
+                AkSoundEngine.PostEvent("Yan_Damage", gameObject);
                 
                 if (runtimeHP.Health <= 0) {
                     ToggleIFrame(true);

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4698612525353005510}
   - component: {fileID: 6846225813118337531}
   - component: {fileID: 4418589786648501797}
+  - component: {fileID: -8105433750055229170}
   m_Layer: 0
   m_Name: TornadoSkill
   m_TagString: Untagged
@@ -123,6 +124,28 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 2.3, z: 0}
+--- !u!114 &-8105433750055229170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4207513491206714435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3739c5de506464aa5a8e6dc78bd05f6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &107814310813667217
 PrefabInstance:
   m_ObjectHideFlags: 0

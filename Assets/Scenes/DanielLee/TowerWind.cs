@@ -47,7 +47,7 @@ public class TowerWind : Summon
             //Instantiate(sampleWindEffect, transform.position, transform.rotation);
             windArea.PushNearby(_pushStrength, _pushDuration);
 
-
+            AkSoundEngine.PostEvent("Wind_Burst", gameObject);
         }
         else {
 

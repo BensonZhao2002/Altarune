@@ -2,7 +2,7 @@
 using UnityEngine;
 
 public class SFXManagedLoop : MonoBehaviour {
-
+    /*
     [SerializeField] private AudioSource source;
     [SerializeField] private AudioClip clip;
     [SerializeField] private bool playOnAwake;
@@ -32,5 +32,20 @@ public class SFXManagedLoop : MonoBehaviour {
             source.volume = Mathf.Lerp(currVolume, 0, lerpVal);
             yield return null;
         }
+    }
+    */
+    [SerializeField] private AK.Wwise.Event managedEvent;
+    [SerializeField] private bool playOnAwake;
+
+    private void Awake() {
+        if (playOnAwake) Play();
+    }
+
+    public void Play() {
+        managedEvent.Post(gameObject);
+    }
+
+    public void Stop(float duration = 0.1f) {
+        managedEvent.Stop(gameObject, (int)(duration * 1000));
     }
 }

@@ -28,6 +28,8 @@ public class AltLaserTowerBeam : MonoBehaviour {
         ogScale.x = transform.localScale.x;
         ogScale.y = transform.localScale.y;
         transform.localScale = Vector3.zero;
+
+        //AkSoundEngine.PostEvent("Laser_BeamAlt", gameObject);
     }
 
 	void OnCollisionEnter(Collision coll) {

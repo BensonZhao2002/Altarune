@@ -145,17 +145,25 @@ public class SummonHandler : MonoBehaviour {
                         }
                         break;
                 }
+
+                AkSoundEngine.PostEvent("Summon_Place", gameObject);
             } else {
                 // Spawn No Mana Feedback Here;
                 ManaSource.Drain(selectedData.summonCost);
             }
         }
+
+        // Check if hologram exists otherwise any click play sound
+        if (hologramHint != null && IsPlacementInvalid) AkSoundEngine.PostEvent("Summon_Invalid", gameObject);
     }
 
     private void ManaSource_OnManaCollapse(bool _) {
         foreach (ArtificialBattery battery in summonedBatteries) {
             battery.Collapse();
         }
+
+        // Check if Mana is 0 otherwise this also play in cutscene
+        if (ManaSource.Mana == 0f) AkSoundEngine.PostEvent("Summon_Collapse", gameObject);
     }
 
     private void Battery_OnSummonCollapse(Summon summon) {
@@ -168,9 +176,14 @@ public class SummonHandler : MonoBehaviour {
 
     private void UpdateHint(Vector3 groundPoint) {
         if (selectedData != null) {
+            string state = ManaSource.Mana >= selectedData.summonCost * 20f ? "Sufficient" : "Insufficient";
+            AkSoundEngine.SetSwitch("Mana_Sufficiency", state, gameObject);
+
             if (!hologramHint) {
                 hologramHint = hologramMap[selectedData];
                 hologramHint.gameObject.SetActive(true);
+
+                AkSoundEngine.PostEvent("Mana_Sufficiency_Play", gameObject);
             }
             hologramHint.transform.position = groundPoint;
             lastHitPoint = groundPoint;
@@ -183,6 +196,8 @@ public class SummonHandler : MonoBehaviour {
             hologramHint.gameObject.SetActive(false);
             hologramHint = null;
         }
+
+        AkSoundEngine.PostEvent("Mana_Sufficiency_Stop", gameObject);
     }
 
     private IEnumerator IDelayCallback(System.Action callback) {

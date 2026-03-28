@@ -77,6 +77,8 @@ public class SummonController : MonoBehaviour {
                               : selectedType == SummonType.Tower ? towerBlueprints[index]
                               : null;
         OnSummonSelected?.Invoke(selectedType, summonData);
+
+        if (selectedType != SummonType.None) AkSoundEngine.PostEvent("Summon_Select", gameObject);
     }
 
     private IEnumerator DelayCast() {

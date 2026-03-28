@@ -17,7 +17,7 @@ public class PlayerMeleeArea : MonoBehaviour {
 
     [SerializeField] private Collider areaCollider;
     [SerializeField] private VisualEffect areaParticles;
-    [SerializeField] private SFXSequence meleeSFXSequence;
+    // [SerializeField] private SFXSequence meleeSFXSequence;
 
     private float timer;
 
@@ -29,7 +29,8 @@ public class PlayerMeleeArea : MonoBehaviour {
         this.playerSource = playerSource;
         timer = attackDuration;
         areaParticles.Reinit();
-        meleeSFXSequence.Play();
+        // meleeSFXSequence.Play();
+        AkSoundEngine.PostEvent("Yan_Melee",gameObject);
 
         enabled = true;
         areaCollider.enabled = true;

@@ -83,6 +83,9 @@ public partial class GolemSavage {
 
         private float timer;
 
+        private float audioTimer;
+        private float timePerRoam = 3f;
+
         public override void Enter(Savage_Input input) {
             GolemSavage gs = input.savage;
             gs.BaseLinearSpeed = gs.activeConfig.roamSpeed;
@@ -95,6 +98,12 @@ public partial class GolemSavage {
         public override void Update(Savage_Input input) {
             GolemSavage gs = input.savage;
             timer += Time.deltaTime;
+
+            audioTimer += Time.deltaTime;
+            if (audioTimer >= timePerRoam) {
+                AkSoundEngine.PostEvent("Savage_Roam", gs.gameObject);
+                audioTimer = 0;
+            }
 
             if (input.aggroTarget) {
                 gs.navMeshAgent.SetDestination(input.aggroTarget.transform.position);

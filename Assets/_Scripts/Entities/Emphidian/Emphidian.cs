@@ -88,6 +88,8 @@ public partial class Emphidian : Entity {
     public void Animator_ReleaseProjectile() {
         Quaternion lookRotation = Quaternion.LookRotation(lockedShootDirection, Vector3.up);
         Instantiate(projectilePrefab, shootPoint.position, lookRotation);
+
+        AkSoundEngine.PostEvent("Emphidian_Shoot", gameObject);
     }
 
     private void Ragdoll() {

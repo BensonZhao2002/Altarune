@@ -10,7 +10,7 @@ public class SovereignEndCutscene : MonoBehaviour {
     [SerializeField] private float initialWait, animEndWait;
 
     public void DoAnimation(float animationLength) {
-        GM.AudioManager.FadeMusic(1f);
+        // GM.AudioManager.FadeMusic(1f);
         ToggleInputs(false);
         StartCoroutine(IDoAnimation(animationLength));
     }

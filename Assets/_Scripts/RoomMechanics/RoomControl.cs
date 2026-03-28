@@ -19,6 +19,9 @@ public class RoomControl : MonoBehaviour {
     [SerializeField] private RoomCompletionListener listener;
     [SerializeField] private DoorToggle[] doors;
 
+    [SerializeField] private AK.Wwise.State roomMusicState;
+    [SerializeField] private AK.Wwise.Event musicEvent;
+
     private readonly Dictionary<RoomTag, Transform> spawnPointMap = new();
     private readonly float doorCollapseTimer = 3;
 
@@ -32,8 +35,36 @@ public class RoomControl : MonoBehaviour {
         listener.OnRoomCleared += Listener_OnRoomCleared;
         listener.OnEntityPerish += Listener_OnEntityPerish;
 
-        if (musicTrack) GM.AudioManager.PlayMusic(musicTrack);
-        else GM.AudioManager.FadeMusic(1);
+        //if (musicTrack) GM.AudioManager.PlayMusic(musicTrack);
+        //else GM.AudioManager.FadeMusic(1);
+
+        // --- RoomTag mapping to MusicState
+        string targetState = "Story"; // Default
+
+        switch (roomTag) {
+            case RoomTag.Lab:
+                targetState = "Story";
+                break;
+            case RoomTag.C1:
+            case RoomTag.C2:
+            case RoomTag.C3:
+            case RoomTag.F4:
+            case RoomTag.F8:
+                targetState = "Checkpoint";
+                break;
+            case RoomTag.F1:
+            case RoomTag.F2:
+            case RoomTag.F3:
+                targetState = "Combat_Catacomb";
+                break;
+            case RoomTag.F5:
+            case RoomTag.F6:
+            case RoomTag.F7:
+                targetState = "Combat_Brimstone";
+                break;
+        }
+
+        AkSoundEngine.SetState("Music", targetState);
 
         foreach (SpawnPoint spawnPoint in spawnPoints) {
             spawnPointMap[spawnPoint.originTag] = spawnPoint.spawnTransform;

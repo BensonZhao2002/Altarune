@@ -42,11 +42,13 @@ public class TowerSniper : Summon {
                 // Fire Projectile
                 projectile.Launch(result);
                 _controller.Fire();
+
+                AkSoundEngine.PostEvent("Sniper_Fire", gameObject);
             }
             attackTick = 0;
         }
-        if (targets == null) return;
         Entity target = GetTarget();
+        if (target == null) return;
         Vector3 targetDir = target.transform.position - transform.position;
         Quaternion targetRot = Quaternion.LookRotation(targetDir);
         Vector3 orient = targetRot.eulerAngles;

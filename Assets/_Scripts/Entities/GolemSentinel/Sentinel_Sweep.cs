@@ -21,6 +21,8 @@ public partial class GolemSentinel {
 
                 input.golem.sentinelSweep
                      .DoSweep(input.golem, lookRotation);
+
+                AkSoundEngine.PostEvent("Sentinel_Sweep_Warn", input.golem.gameObject);
             } else {
                 input.golem.UpdateAggro();
             }

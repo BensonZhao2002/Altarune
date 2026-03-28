@@ -32,6 +32,8 @@ public class SmallGatlingArea : MonoBehaviour {
         transform.localScale = new Vector3(randomSize, 0.1f, randomSize);
         Invoke("Expire", duration);
         StartCoroutine(Damage());
+
+        //AkSoundEngine.PostEvent("Gatling_SmallFire", gameObject);
     }
 
     private IEnumerator Damage() {

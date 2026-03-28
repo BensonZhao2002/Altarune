@@ -47,6 +47,8 @@ public partial class GolemSlither {
 
                 input.golemSlither.slitherSweep
                      .DoSweep(input.golemSlither, lookRotation);
+
+                AkSoundEngine.PostEvent("Slither_Sweep_Warn", input.golemSlither.gameObject);
             } else {
                 input.golemSlither.UpdateAggro();
             }

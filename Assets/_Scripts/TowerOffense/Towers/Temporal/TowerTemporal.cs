@@ -14,6 +14,8 @@ public class TowerTemporal : Summon {
 
     void Awake() {
         magicCircleController.SetRadius(0);
+
+        AkSoundEngine.PostEvent("Temporal_Reverse", gameObject);
     }
 
     public override void Init(SummonData data, Entity summoner,
@@ -68,5 +70,9 @@ public class TowerTemporal : Summon {
         tempoArea.gameObject.SetActive(true);
         tempoArea.OnContactStay += TemporalArea_OnContactStay;
         tempoArea.OnContactExit += TemporalArea_OnContactExit;
+    }
+
+    private void OnDestroy() {
+        AkSoundEngine.StopAll(gameObject);
     }
 }

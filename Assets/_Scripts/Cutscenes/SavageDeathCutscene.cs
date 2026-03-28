@@ -22,7 +22,7 @@ public class SavageDeathCutscene : MonoBehaviour
     }
 
     private void SavageGolem_OnPerish(BaseObject _) {
-        GM.AudioManager.FadeMusic(0.5f);
+        // GM.AudioManager.FadeMusic(0.5f);
         timeScaleCore = GM.TimeScaleManager.AddTimeScaleMultiplier(0, timeFreezeTimer, timeFreezeCurve, true);
         StartCoroutine(IDoCutscene());
     }
@@ -36,6 +36,8 @@ public class SavageDeathCutscene : MonoBehaviour
         savageAnimator.updateMode = AnimatorUpdateMode.UnscaledTime;
 
         focusCamera.Priority = 20;
+
+        AkSoundEngine.PostEvent("Savage_Perish", gameObject);
 
         yield return new WaitForSecondsRealtime(perishClip.length + endWait);
 

@@ -68,6 +68,8 @@ public partial class GolemSentinel {
             input.golem.animator.SetTrigger(CHARGE_START_PARAM);
             input.golem.chargeShieldController.Enable();
             input.golem.chargeIndicator.DoFade(true);
+
+            AkSoundEngine.PostEvent("Sentinel_Charge_Warn", input.golem.gameObject);
         }
 
         public override void Update(Sentinel_Input input) {
@@ -93,6 +95,8 @@ public partial class GolemSentinel {
             input.golem.navMeshAgent.enabled = false;
             input.golem.MotionDriver.Set(input.golem.controller);
             input.golem.animator.SetTrigger(CHARGE_COMMIT_PARAM);
+
+            AkSoundEngine.PostEvent("Sentinel_Charge_Attack", input.golem.gameObject);
         }
 
         public override void Update(Sentinel_Input input) { }

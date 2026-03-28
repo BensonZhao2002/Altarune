@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SFXLoop : MonoBehaviour {
-
+    /*
     [SerializeField] private AudioSource[] sources;
     [SerializeField] private AudioClip clip;
     [SerializeField] private Vector2 pitchVariation;
@@ -40,5 +40,15 @@ public class SFXLoop : MonoBehaviour {
                 source.volume = Mathf.Lerp(currVolume, 0, lerpVal);
             } yield return null;
         }
+    }
+    */
+    [SerializeField] private AK.Wwise.Event loopEvent;
+
+    public void Play() {
+        loopEvent.Post(gameObject);
+    }
+
+    public void Stop(float duration = 0.1f) {
+        loopEvent.Stop(gameObject, (int)(duration * 1000));
     }
 }

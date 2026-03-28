@@ -24,6 +24,9 @@ public partial class GolemSavage {
         private Vector3 moveDirection;
         private float timer;
 
+        private float audioTimer;
+        private float timePerWhoosh = 0.3f;
+
         public override void Enter(Savage_Input input) {
             gs = input.savage;
             gs.navMeshAgent.ResetPath();
@@ -32,6 +35,8 @@ public partial class GolemSavage {
             moveDirection = RandomDirection;
             gs.TryToggleIFrame(true);
             gs.animator.SetTrigger(gs.spinStartParam);
+
+            AkSoundEngine.PostEvent("Savage_Spin_Earth_Play", gs.gameObject);
         }
 
         public override void Update(Savage_Input input) {
@@ -44,6 +49,8 @@ public partial class GolemSavage {
                                 && gs.animator.GetCurrentAnimatorStateInfo(1).shortNameHash != gs.spinLoopParam
                                     && gs.animator.GetCurrentAnimatorStateInfo(1).shortNameHash != gs.spinEndParam) {
                         gs.animator.SetTrigger(gs.spinStartParam);
+
+                        AkSoundEngine.PostEvent("Savage_Spin_Start", gs.gameObject);
                     }
 
                     if (timer > gs.spinStartClip.length) {
@@ -52,6 +59,12 @@ public partial class GolemSavage {
                         timer = 0;
                     } break;
                 case SpinState.Loop:
+                    audioTimer += Time.deltaTime;
+                    if (audioTimer >= timePerWhoosh) {
+                        AkSoundEngine.PostEvent("Savage_Spin", gs.gameObject);
+                        audioTimer = 0;
+                    }
+
                     float lerpVal = Mathf.Clamp01(timer / gs.activeConfig.maxSpinSpeedDelay);
                     spinSpeed = Mathf.Lerp(0, gs.activeConfig.maxSpinSpeed, lerpVal);
                     break;
@@ -59,10 +72,18 @@ public partial class GolemSavage {
                     if (timer < gs.activeConfig.stopDuration) {
                         float stopLerp = timer / gs.activeConfig.stopDuration;
                         spinSpeed = Mathf.Lerp(gs.activeConfig.maxSpinSpeed, 0, stopLerp);
+
+                        audioTimer += Time.deltaTime;
+                        if (audioTimer >= timePerWhoosh) {
+                            AkSoundEngine.PostEvent("Savage_Spin", gs.gameObject);
+                            audioTimer = 0;
+                        }
                     } else {
                         gs.spinEffector.ToggleDamage(false);
                         gs.animator.SetTrigger(gs.spinEndParam);
                         spinState = SpinState.Done;
+
+                        AkSoundEngine.PostEvent("Savage_Spin_End", gs.gameObject);
                     } break;
             }
 
@@ -87,6 +108,8 @@ public partial class GolemSavage {
             gs.earthTornado.Deactivate();
             spinState = SpinState.Stop;
             timer = 0;
+
+            AkSoundEngine.PostEvent("Savage_Spin_Earth_Stop", gs.gameObject);
         }
     }
 }

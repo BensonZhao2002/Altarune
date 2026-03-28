@@ -21,6 +21,8 @@ public class MainMenuUI : MonoBehaviour {
 
     private void ShowCredits() {
         StartCoroutine(ILoadLevelAsync(creditsScene));
+
+        AkSoundEngine.PostEvent("Music_Stop", gameObject);
     }
 
     private void ExitGame() {

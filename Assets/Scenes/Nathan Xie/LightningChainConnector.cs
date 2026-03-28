@@ -7,6 +7,11 @@ public class LightningChainConnector : MonoBehaviour
     [SerializeField] private CapsuleCollider CC;
     private LightningChainBall dominantBall;
     private LightningChainBall submissiveBall;
+
+    private void Awake() {
+        AkSoundEngine.PostEvent("LightningChain_Connector", gameObject);
+    }
+
     public void setAngle(Vector3 start, Vector3 end){
         var v3 = transform.localScale;
         v3.y = Vector3.Magnitude(end - start) / 2f;
@@ -35,7 +40,11 @@ public class LightningChainConnector : MonoBehaviour
     void OnTriggerEnter(Collider other){
         if(other.TryGetComponent(out BaseObject baseObject)
         && !(baseObject is Entity && (baseObject as Entity).Faction == EntityFaction.Friendly)){
-            baseObject.TryDamage(2);
+            baseObject.TryDamage(2, ElementType.Shock);
         }
+    }
+
+    private void OnDestroy() {
+        AkSoundEngine.StopAll(gameObject);
     }
 }

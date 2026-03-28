@@ -57,7 +57,19 @@ public class Damageable : ObjectModule {
                 baseObject.PropagateDamage(processedAmount);
                 StartCoroutine(ISimulateIFrame());
 
+                AkSoundEngine.SetSwitch("Tower_Damage", element.ToString(), gameObject);
+                AkSoundEngine.PostEvent("Tower_Damage", gameObject);
+
                 if (runtimeHP.Health <= 0) {
+                    // Make sure object is creature not statue/crystal/spawner etc
+                    if (baseObject is GolemSiftling || baseObject is GolemSlither
+                        || baseObject is GolemSentinel || baseObject is Emphidian
+                        || baseObject is Bat || baseObject is Scaramite) {
+                        AkSoundEngine.PostEvent("Enemy_Perish", gameObject);
+                    } else {
+                        AkSoundEngine.PostEvent("Battery_Perish", gameObject);
+                    }
+
                     baseObject.Perish();
                     ToggleIFrame(true);
                 }

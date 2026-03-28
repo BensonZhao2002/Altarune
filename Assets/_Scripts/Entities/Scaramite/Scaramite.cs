@@ -57,6 +57,10 @@ public partial class Scaramite : Entity {
             stateMachine.StateInput.aggroTarget = closestTarget;
         }
 
+        if (closestTarget && stateMachine.State is not Scaramite_Chase) {
+            AkSoundEngine.PostEvent("Scaramite_Aggro", gameObject);
+        }
+
         State<Scaramite_Input> nextState = closestTarget ? new Scaramite_Chase()
                                                          : new Scaramite_Roam();
         stateMachine.SetState(nextState);

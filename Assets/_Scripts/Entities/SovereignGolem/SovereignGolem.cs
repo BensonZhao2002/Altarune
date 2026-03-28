@@ -61,6 +61,9 @@ public partial class SovereignGolem : Entity {
         Sovereign_Input input = new(macroMachine, this);
         macroMachine.Init(input, new MacroState_Inert());
         animator.SetTrigger(ACTIVATION_TRIGGER);
+
+        AkSoundEngine.PostEvent("Sovereign_Activate", gameObject);
+        AkSoundEngine.SetState("Music", "Combat_Sovereign");
     }
 
     public void DoMacroTransition() {
@@ -193,6 +196,8 @@ public partial class SovereignGolem {
             SovereignGolem sg = input.sovereign;
             sg.animator.SetTrigger(ROAR_TRIGGER);
             sg.sfxRoar.Play();
+
+            AkSoundEngine.PostEvent("Sovereign_Roar", sg.gameObject);
         }
 
         public override void Update(Sovereign_Input input) {
@@ -234,6 +239,8 @@ public partial class SovereignGolem {
             sg.swipingLaserMaster.EnterPhase(phase);
             sg.swipingLaserMaster.DoAttack();
             sg.sfxSwipingLaserVoice.Play();
+
+            AkSoundEngine.PostEvent("Sovereign_Swipe_Voice", sg.gameObject);
         }
 
         public override void Update(Sovereign_Input _) { }
@@ -268,6 +275,8 @@ public partial class SovereignGolem {
             sg.staticLaserMaster.EnterPhase(phase);
             sg.staticLaserMaster.DoAttack();
             sg.sfxStaticLaserVoice.Play();
+
+            AkSoundEngine.PostEvent("Sovereign_Static_Voice", sg.gameObject);
         }
 
         public override void Update(Sovereign_Input _) { }
@@ -298,6 +307,8 @@ public partial class SovereignGolem {
             sg.pawSlamMaster.EnterPhase(phase);
             sg.pawSlamMaster.DoAttack();
             sg.sfxPawSlamVoice.Play();
+
+            AkSoundEngine.PostEvent("Sovereign_Paw", sg.gameObject);
         }
 
         public override void Update(Sovereign_Input _) { }
@@ -318,6 +329,8 @@ public partial class SovereignGolem {
             SovereignGolem sg = input.sovereign;
             sg.collapsionSlamMaster.DoAttack();
             sg.sfxCollapsionVoice.Play();
+
+            AkSoundEngine.PostEvent("Sovereign_Collapse_Voice", sg.gameObject);
         }
 
         public override void Update(Sovereign_Input _) { }
@@ -341,6 +354,8 @@ public partial class SovereignGolem {
             sg.golemSpawner.CollapseSpawns();
             sg.animator.SetTrigger(DEATH_ANIM_TRIGGER);
             sg.endCutscene.DoAnimation(sg.deathAnimationClip.length);
+
+            AkSoundEngine.SetState("Music", "Checkpoint");
         }
 
         public override void Update(Sovereign_Input _) { }

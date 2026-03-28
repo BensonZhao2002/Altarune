@@ -36,6 +36,8 @@ public class GolemSweep : MonoBehaviour {
         castRangeEnforcer.Toggle(true);
         hitbox.DoAnticipation(caster, sweepDuration);
         animatorLink.DoAnticipation(sweepDuration);
+
+        //AkSoundEngine.PostEvent("Enemy_Sweep_Warn", gameObject);
     }
 
     public void CancelSweep() {
@@ -52,6 +54,8 @@ public class GolemSweep : MonoBehaviour {
         castRangeEnforcer.Toggle(false);
         hitbox.DoDamage(damageAmount);
         StartCoroutine(IAfterSweepWait());
+
+        AkSoundEngine.PostEvent("Enemy_Sweep_Attack", gameObject);
     }
 
     private IEnumerator IAfterSweepWait() {

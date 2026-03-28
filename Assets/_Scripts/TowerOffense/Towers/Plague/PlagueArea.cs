@@ -82,7 +82,7 @@ public class PlagueStatusEffect : EntityEffect {
         damageTimer += Time.deltaTime;
         spreadTimer += Time.deltaTime;
         if (damageTimer >= damageInterval) {
-            entity.TryDamage(plagueDamage);
+            entity.TryDamage(plagueDamage, ElementType.Poison);
             damageTimer = 0;
         }
 

@@ -13,6 +13,8 @@ public class TowerFurnace : Summon {
 
     void Awake() {
         angle = Random.Range(0, 360);
+
+        AkSoundEngine.PostEvent("Furnace_Loop", gameObject);
     }
 
     void Update() {
@@ -24,7 +26,14 @@ public class TowerFurnace : Summon {
             Vector3 startingDirection = transform.right;
             Vector3 result = myRotation * startingDirection;
             projectile.Launch(result);
+
+            AkSoundEngine.PostEvent("Furnace_Launch", gameObject);
+
             attackTick = 0;
         }
+    }
+
+    private void OnDestroy() {
+        AkSoundEngine.StopAll(gameObject);
     }
 }

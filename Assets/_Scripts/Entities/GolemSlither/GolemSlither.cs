@@ -112,6 +112,8 @@ public partial class GolemSlither : Entity {
 
     private void SlitherZig_OnWarningComplete(int validPositionAmount) {
         stateMachine.SetState(new State_ZigCharge(validPositionAmount));
+
+        AkSoundEngine.PostEvent("Slither_Zig_Attack", gameObject);
     }
 
     private void GolemSlither_OnTimeScaleSet(float timeScale) {

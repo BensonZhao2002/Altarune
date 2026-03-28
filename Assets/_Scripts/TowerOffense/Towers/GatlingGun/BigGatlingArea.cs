@@ -10,10 +10,16 @@ public class BigGatlingArea : MonoBehaviour {
         this.gatlingGun = gatlingGun;
         transform.localScale = new Vector3(size, 0.1f, size);
         Invoke("Expire", duration);
+
+        AkSoundEngine.PostEvent("Gatling_BigFire", gameObject);
     }
 
     private void Expire() {
         gatlingGun.StopAggro();
         Destroy(gameObject);
+    }
+
+    private void OnDestroy() {
+        AkSoundEngine.StopAll(gameObject);
     }
 }

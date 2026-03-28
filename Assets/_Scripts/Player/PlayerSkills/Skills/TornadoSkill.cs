@@ -12,6 +12,10 @@ public class TornadoSkill : BasePlayerSkill
 
     [SerializeField] private AnimationCurve scaleCurve;
 
+    private void Awake() {
+        AkSoundEngine.PostEvent("Yan_Tornado", gameObject);
+    }
+
     public override void SpawnSkill(PlayerSkillData data, Vector3 playerPos, Vector3 targetPos, ISkillSpawn spawnBehavior, ISkillMovement moveBehavior) {
         base.SpawnSkill(data, playerPos, targetPos, new DefaultSpawn(), new ProjectileMovement());
 

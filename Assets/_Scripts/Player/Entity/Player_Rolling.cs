@@ -18,6 +18,8 @@ public partial class Player {
             dir = inputVector.magnitude > 0 ? input.player.inputSource.InputVector
                                             : input.player.driver.MoveDir;
             input.player.animator.Play("Dodge");
+
+            AkSoundEngine.PostEvent("Yan_Dodge", input.player.gameObject);
         }
 
         public override void Update(Player_Input input) {
