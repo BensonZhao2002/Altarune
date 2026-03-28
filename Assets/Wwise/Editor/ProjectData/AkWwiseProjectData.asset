@@ -1,0 +1,3387 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7153ce1617b647a5a38032097703f0d, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ca9213860951a940ad9b84276757f69e
+    ParentPath: Virtual Acoustics/Default Work Unit
+    guid: ca9213860951a940ad9b84276757f69e
+    GuidInternal: 
+    m_lastTime: -8584283158490885670
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ba4b89af985a094d980595c96bf19c0b
+    ParentPath: Master-Mixer Hierarchy/Default Work Unit
+    guid: ba4b89af985a094d980595c96bf19c0b
+    GuidInternal: 
+    m_lastTime: -8584271778342431158
+    List:
+    - name: Boss
+      guid: fea22b9a5d84554185a3443d6b0f1da9
+      id: 1560169506
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 85ccb9099faa9b41adcd60200c6c0c92
+      - ElementName: Enemy
+        ObjectType: 2
+        guid: c402894570d21b44b6edf7e8d7d16f13
+      - ElementName: Boss
+        ObjectType: 2
+        guid: fea22b9a5d84554185a3443d6b0f1da9
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/Enemy/Boss
+    - name: Cutscene
+      guid: 7a7f063ab7bdf646a5a2cc593ebbec18
+      id: 1182958561
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 85ccb9099faa9b41adcd60200c6c0c92
+      - ElementName: Cutscene
+        ObjectType: 2
+        guid: 7a7f063ab7bdf646a5a2cc593ebbec18
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/Cutscene
+    - name: Enemy
+      guid: c402894570d21b44b6edf7e8d7d16f13
+      id: 2299321487
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 85ccb9099faa9b41adcd60200c6c0c92
+      - ElementName: Enemy
+        ObjectType: 2
+        guid: c402894570d21b44b6edf7e8d7d16f13
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/Enemy
+    - name: Health
+      guid: dc2861495c5fa24e8e389f6bc3e70321
+      id: 3677180323
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 85ccb9099faa9b41adcd60200c6c0c92
+      - ElementName: Health
+        ObjectType: 2
+        guid: dc2861495c5fa24e8e389f6bc3e70321
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/Health
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+    - name: Mob
+      guid: 5f4e09a21bb9b54bbf1bf90c8d8b50da
+      id: 1082004793
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 85ccb9099faa9b41adcd60200c6c0c92
+      - ElementName: Enemy
+        ObjectType: 2
+        guid: c402894570d21b44b6edf7e8d7d16f13
+      - ElementName: Mob
+        ObjectType: 2
+        guid: 5f4e09a21bb9b54bbf1bf90c8d8b50da
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/Enemy/Mob
+    - name: Music
+      guid: 5fe2c4098516f846b27f3a6c09e25554
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 5fe2c4098516f846b27f3a6c09e25554
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Music
+    - name: SFX
+      guid: 85ccb9099faa9b41adcd60200c6c0c92
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 85ccb9099faa9b41adcd60200c6c0c92
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX
+    - name: Tower
+      guid: c73e5dfc32bdaa49b60677e25924f16e
+      id: 1737926756
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 85ccb9099faa9b41adcd60200c6c0c92
+      - ElementName: Tower
+        ObjectType: 2
+        guid: c73e5dfc32bdaa49b60677e25924f16e
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/Tower
+    - name: UI
+      guid: 273a59e4c93cf549a59feac256cdda51
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 85ccb9099faa9b41adcd60200c6c0c92
+      - ElementName: UI
+        ObjectType: 2
+        guid: 273a59e4c93cf549a59feac256cdda51
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/UI
+    - name: Yan
+      guid: 95a246f120514f478bda10e087c95861
+      id: 912360423
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba4b89af985a094d980595c96bf19c0b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 85ccb9099faa9b41adcd60200c6c0c92
+      - ElementName: Yan
+        ObjectType: 2
+        guid: 95a246f120514f478bda10e087c95861
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/Yan
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 954a6f1a727a2945b6ee76590dc9a9a8
+    ParentPath: SoundBanks/Default Work Unit
+    guid: 954a6f1a727a2945b6ee76590dc9a9a8
+    GuidInternal: 
+    m_lastTime: -8584278865605450822
+    List:
+    - name: SoundBank
+      guid: d838c57e64fb3746aedcaeaeeda8623c
+      id: 1661994096
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 954a6f1a727a2945b6ee76590dc9a9a8
+      - ElementName: SoundBank
+        ObjectType: 7
+        guid: d838c57e64fb3746aedcaeaeeda8623c
+      Path: SoundBanks/Default Work Unit/SoundBank
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ba66e1f0758b95479cbda4a5669b6001
+    ParentPath: Events/Default Work Unit
+    guid: ba66e1f0758b95479cbda4a5669b6001
+    GuidInternal: 
+    m_lastTime: -8584269177763057877
+    List:
+    - name: Bat
+      guid: 3d6f4ff857c2384cb53ecd513709d6ef
+      id: 513390118
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Bat
+        ObjectType: 4
+        guid: 3d6f4ff857c2384cb53ecd513709d6ef
+      Path: Events/Default Work Unit/Enemy/Mob/Bat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Bat_FlyAggro
+      guid: dc240d58e923b442915f56b8dca433f6
+      id: 648572810
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Bat
+        ObjectType: 4
+        guid: 3d6f4ff857c2384cb53ecd513709d6ef
+      - ElementName: Bat_FlyAggro
+        ObjectType: 3
+        guid: dc240d58e923b442915f56b8dca433f6
+      Path: Events/Default Work Unit/Enemy/Mob/Bat/Bat_FlyAggro
+      maxAttenuation: 0
+      maxDuration: 2.219782
+      minDuration: 0
+    - name: Battery_Perish
+      guid: 111f1b37326d2a4399f09f5864809a4b
+      id: 3430220816
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Perish
+        ObjectType: 4
+        guid: 489b3bdcde0c9846a53d361818cdbc9f
+      - ElementName: Battery_Perish
+        ObjectType: 3
+        guid: 111f1b37326d2a4399f09f5864809a4b
+      Path: Events/Default Work Unit/Health/Perish/Battery_Perish
+      maxAttenuation: 0
+      maxDuration: 0.5536508
+      minDuration: 0.5378894
+    - name: Boss
+      guid: a43abc8dc00bb148bd70aaa969f8183f
+      id: 1560169506
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      Path: Events/Default Work Unit/Enemy/Boss
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Charge
+      guid: 88fbe9c2f10ddb4493f57d852bb70e5c
+      id: 4285247397
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Sentinel
+        ObjectType: 4
+        guid: 0fe3f3479fb4184bbe381fafca981aeb
+      - ElementName: Charge
+        ObjectType: 4
+        guid: 88fbe9c2f10ddb4493f57d852bb70e5c
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Sentinel/Charge
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Checkpoint_Heal
+      guid: 94539a365964bb41be934eac4acf441b
+      id: 3839657096
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Heal
+        ObjectType: 4
+        guid: 92cff13b351ba644af0e38b681eeddeb
+      - ElementName: Checkpoint_Heal
+        ObjectType: 3
+        guid: 94539a365964bb41be934eac4acf441b
+      Path: Events/Default Work Unit/Health/Heal/Checkpoint_Heal
+      maxAttenuation: 0
+      maxDuration: 3.84
+      minDuration: 3.817883
+    - name: Checkpoint_Heal_Loop
+      guid: 8db6d0d119522b4fb78885dcce21a349
+      id: 3325201609
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Heal
+        ObjectType: 4
+        guid: 92cff13b351ba644af0e38b681eeddeb
+      - ElementName: Checkpoint_Heal_Loop
+        ObjectType: 3
+        guid: 8db6d0d119522b4fb78885dcce21a349
+      Path: Events/Default Work Unit/Health/Heal/Checkpoint_Heal_Loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Checkpoint_Heal_Stop
+      guid: 041e8a10405de6428c7c5a6f5688260a
+      id: 1311577255
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Heal
+        ObjectType: 4
+        guid: 92cff13b351ba644af0e38b681eeddeb
+      - ElementName: Checkpoint_Heal_Stop
+        ObjectType: 3
+        guid: 041e8a10405de6428c7c5a6f5688260a
+      Path: Events/Default Work Unit/Health/Heal/Checkpoint_Heal_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Cutscene
+      guid: c5ed55b5286e0f4c950662885730cae4
+      id: 1182958561
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      Path: Events/Default Work Unit/Cutscene
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Damage
+      guid: 7e275483ab79fb49b11459e88a71d6ee
+      id: 1786804762
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Damage
+        ObjectType: 4
+        guid: 7e275483ab79fb49b11459e88a71d6ee
+      Path: Events/Default Work Unit/Health/Damage
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Emphidian
+      guid: 7e1a19f0616bc14b8fc0dd9838dadafe
+      id: 1696664868
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Emphidian
+        ObjectType: 4
+        guid: 7e1a19f0616bc14b8fc0dd9838dadafe
+      Path: Events/Default Work Unit/Enemy/Mob/Emphidian
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Emphidian_Shoot
+      guid: 5aa09a274d163d42a6c30c29a6c3099f
+      id: 1829428236
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Emphidian
+        ObjectType: 4
+        guid: 7e1a19f0616bc14b8fc0dd9838dadafe
+      - ElementName: Emphidian_Shoot
+        ObjectType: 3
+        guid: 5aa09a274d163d42a6c30c29a6c3099f
+      Path: Events/Default Work Unit/Enemy/Mob/Emphidian/Emphidian_Shoot
+      maxAttenuation: 0
+      maxDuration: 0.31651926
+      minDuration: 0.2819866
+    - name: Enemy
+      guid: aae72b5226c18849a09867aa8cae3c3b
+      id: 2299321487
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      Path: Events/Default Work Unit/Enemy
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemy_Perish
+      guid: 666a59180299924ba8a25dc8675756a5
+      id: 776453037
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Perish
+        ObjectType: 4
+        guid: 489b3bdcde0c9846a53d361818cdbc9f
+      - ElementName: Enemy_Perish
+        ObjectType: 3
+        guid: 666a59180299924ba8a25dc8675756a5
+      Path: Events/Default Work Unit/Health/Perish/Enemy_Perish
+      maxAttenuation: 0
+      maxDuration: 1.6118231
+      minDuration: 1.3408042
+    - name: Enemy_Sweep_Attack
+      guid: 9c6f3e2202922247bae83076b5e8b2ee
+      id: 1479078661
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Enemy_Sweep_Attack
+        ObjectType: 3
+        guid: 9c6f3e2202922247bae83076b5e8b2ee
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Enemy_Sweep_Attack
+      maxAttenuation: 0
+      maxDuration: 0.26018107
+      minDuration: 0.23179497
+    - name: Furnace
+      guid: ccdc626f53740847b455a6812075e7c0
+      id: 3421540315
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Furnace
+        ObjectType: 4
+        guid: ccdc626f53740847b455a6812075e7c0
+      Path: Events/Default Work Unit/Tower/Furnace
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Furnace_Launch
+      guid: 79ff093dacf5d946b098e64831d67ba8
+      id: 283323471
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Furnace
+        ObjectType: 4
+        guid: ccdc626f53740847b455a6812075e7c0
+      - ElementName: Furnace_Launch
+        ObjectType: 3
+        guid: 79ff093dacf5d946b098e64831d67ba8
+      Path: Events/Default Work Unit/Tower/Furnace/Furnace_Launch
+      maxAttenuation: 0
+      maxDuration: 0.8826257
+      minDuration: 0.86746264
+    - name: Furnace_Loop
+      guid: 53cf0cbccda8cc40b680938b60e04c42
+      id: 3076264760
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Furnace
+        ObjectType: 4
+        guid: ccdc626f53740847b455a6812075e7c0
+      - ElementName: Furnace_Loop
+        ObjectType: 3
+        guid: 53cf0cbccda8cc40b680938b60e04c42
+      Path: Events/Default Work Unit/Tower/Furnace/Furnace_Loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Gatling
+      guid: 71b55d054f3f0d439ef7c4d22da687ae
+      id: 2433382055
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Gatling
+        ObjectType: 4
+        guid: 71b55d054f3f0d439ef7c4d22da687ae
+      Path: Events/Default Work Unit/Tower/Gatling
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Gatling_BigFire
+      guid: 1a4f4c1ee29b0f49b3832fba58b65b1e
+      id: 248788380
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Gatling
+        ObjectType: 4
+        guid: 71b55d054f3f0d439ef7c4d22da687ae
+      - ElementName: Gatling_BigFire
+        ObjectType: 3
+        guid: 1a4f4c1ee29b0f49b3832fba58b65b1e
+      Path: Events/Default Work Unit/Tower/Gatling/Gatling_BigFire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Gatling_SmallFire
+      guid: 175de4ef4bd8f14db5303a4a84ab04f3
+      id: 3729333003
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Gatling
+        ObjectType: 4
+        guid: 71b55d054f3f0d439ef7c4d22da687ae
+      - ElementName: Gatling_SmallFire
+        ObjectType: 3
+        guid: 175de4ef4bd8f14db5303a4a84ab04f3
+      Path: Events/Default Work Unit/Tower/Gatling/Gatling_SmallFire
+      maxAttenuation: 0
+      maxDuration: 3.679948
+      minDuration: 3.63768
+    - name: Golem
+      guid: 8b08a6c2477dd447a704485e4b31de9e
+      id: 3623907463
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      Path: Events/Default Work Unit/Enemy/Mob/Golem
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Heal
+      guid: 92cff13b351ba644af0e38b681eeddeb
+      id: 3448274447
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Heal
+        ObjectType: 4
+        guid: 92cff13b351ba644af0e38b681eeddeb
+      Path: Events/Default Work Unit/Health/Heal
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Health
+      guid: 5786cc69da2a1848af1da49864f6907b
+      id: 3677180323
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      Path: Events/Default Work Unit/Health
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lab
+      guid: 94f91e6e70b1a04fb18a15a116a28651
+      id: 578926554
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      - ElementName: Lab
+        ObjectType: 4
+        guid: 94f91e6e70b1a04fb18a15a116a28651
+      Path: Events/Default Work Unit/Cutscene/Lab
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Laser
+      guid: 6f2edcfe896d1d43932792c50d274dad
+      id: 3982605422
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 6f2edcfe896d1d43932792c50d274dad
+      Path: Events/Default Work Unit/Tower/Laser
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Laser
+      guid: 996d0efeeb366d4fad1721b1178a7595
+      id: 3982605422
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Laser_Beam
+      guid: 9d4c47f093127145a383c0a762a5ffc3
+      id: 733612088
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 6f2edcfe896d1d43932792c50d274dad
+      - ElementName: Laser_Beam
+        ObjectType: 3
+        guid: 9d4c47f093127145a383c0a762a5ffc3
+      Path: Events/Default Work Unit/Tower/Laser/Laser_Beam
+      maxAttenuation: 0
+      maxDuration: 2.508304
+      minDuration: 2.2873867
+    - name: Laser_BeamAlt
+      guid: 4577006b73be564b81a027c30fe38d2e
+      id: 1474345713
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 6f2edcfe896d1d43932792c50d274dad
+      - ElementName: Laser_BeamAlt
+        ObjectType: 3
+        guid: 4577006b73be564b81a027c30fe38d2e
+      Path: Events/Default Work Unit/Tower/Laser/Laser_BeamAlt
+      maxAttenuation: 0
+      maxDuration: 2.8070247
+      minDuration: 2.5007744
+    - name: LightningChain
+      guid: 861407bc8c79aa42b1a80463857b4087
+      id: 675513424
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: LightningChain
+        ObjectType: 4
+        guid: 861407bc8c79aa42b1a80463857b4087
+      Path: Events/Default Work Unit/Tower/LightningChain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LightningChain_Connector
+      guid: fa7a2b0cf9fb264396625f80ebc6663f
+      id: 1493575816
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: LightningChain
+        ObjectType: 4
+        guid: 861407bc8c79aa42b1a80463857b4087
+      - ElementName: LightningChain_Connector
+        ObjectType: 3
+        guid: fa7a2b0cf9fb264396625f80ebc6663f
+      Path: Events/Default Work Unit/Tower/LightningChain/LightningChain_Connector
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LightningChain_Launch
+      guid: 85e20fc8d128e3448be63ed9fe92d2ad
+      id: 2488834650
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: LightningChain
+        ObjectType: 4
+        guid: 861407bc8c79aa42b1a80463857b4087
+      - ElementName: LightningChain_Launch
+        ObjectType: 3
+        guid: 85e20fc8d128e3448be63ed9fe92d2ad
+      Path: Events/Default Work Unit/Tower/LightningChain/LightningChain_Launch
+      maxAttenuation: 0
+      maxDuration: 2.8441417
+      minDuration: 2.7631745
+    - name: Mana
+      guid: b2cad8b7579de64c8852b5f0826b8207
+      id: 3145131296
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      - ElementName: Mana
+        ObjectType: 4
+        guid: b2cad8b7579de64c8852b5f0826b8207
+      Path: Events/Default Work Unit/UI/Mana
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Mana_Cell_Fill
+      guid: 13e8674de7c8b548b98acbdc8129d5b5
+      id: 4113127017
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      - ElementName: Mana
+        ObjectType: 4
+        guid: b2cad8b7579de64c8852b5f0826b8207
+      - ElementName: Mana_Cell_Fill
+        ObjectType: 3
+        guid: 13e8674de7c8b548b98acbdc8129d5b5
+      Path: Events/Default Work Unit/UI/Mana/Mana_Cell_Fill
+      maxAttenuation: 0
+      maxDuration: 2.2711554
+      minDuration: 2.245069
+    - name: Mana_Sufficiency_Play
+      guid: 79446aa36a5a9f40bc45115fa1fb857c
+      id: 1503682374
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      - ElementName: Mana
+        ObjectType: 4
+        guid: b2cad8b7579de64c8852b5f0826b8207
+      - ElementName: Mana_Sufficiency_Play
+        ObjectType: 3
+        guid: 79446aa36a5a9f40bc45115fa1fb857c
+      Path: Events/Default Work Unit/UI/Mana/Mana_Sufficiency_Play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Mana_Sufficiency_Stop
+      guid: 426d904568da1044b3e2a4585a50e0a8
+      id: 3313107000
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      - ElementName: Mana
+        ObjectType: 4
+        guid: b2cad8b7579de64c8852b5f0826b8207
+      - ElementName: Mana_Sufficiency_Stop
+        ObjectType: 3
+        guid: 426d904568da1044b3e2a4585a50e0a8
+      Path: Events/Default Work Unit/UI/Mana/Mana_Sufficiency_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Meteor
+      guid: 95f61a6edd511548bd4ce2198f8f25bd
+      id: 1599898841
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Meteor
+        ObjectType: 4
+        guid: 95f61a6edd511548bd4ce2198f8f25bd
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Meteor
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Mob
+      guid: 72fd6a82f50f8740b4108b55e1905995
+      id: 1082004793
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      Path: Events/Default Work Unit/Enemy/Mob
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 82932bfcc73fd645be78bcf0d7da8496
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Music
+        ObjectType: 4
+        guid: 82932bfcc73fd645be78bcf0d7da8496
+      Path: Events/Default Work Unit/Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Play
+      guid: 0aba549fe26b6442b062f915ea98a0dd
+      id: 202194903
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Music
+        ObjectType: 4
+        guid: 82932bfcc73fd645be78bcf0d7da8496
+      - ElementName: Music_Play
+        ObjectType: 3
+        guid: 0aba549fe26b6442b062f915ea98a0dd
+      Path: Events/Default Work Unit/Music/Music_Play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Stop
+      guid: 5a293e603b74a649aa2787852b8219df
+      id: 3227181061
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Music
+        ObjectType: 4
+        guid: 82932bfcc73fd645be78bcf0d7da8496
+      - ElementName: Music_Stop
+        ObjectType: 3
+        guid: 5a293e603b74a649aa2787852b8219df
+      Path: Events/Default Work Unit/Music/Music_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Perish
+      guid: 489b3bdcde0c9846a53d361818cdbc9f
+      id: 1929465354
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Perish
+        ObjectType: 4
+        guid: 489b3bdcde0c9846a53d361818cdbc9f
+      Path: Events/Default Work Unit/Health/Perish
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pillar_Rise
+      guid: f535bdb2d47cda46999e7c626dd4a7fb
+      id: 4067478631
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      - ElementName: Lab
+        ObjectType: 4
+        guid: 94f91e6e70b1a04fb18a15a116a28651
+      - ElementName: Pillar_Rise
+        ObjectType: 3
+        guid: f535bdb2d47cda46999e7c626dd4a7fb
+      Path: Events/Default Work Unit/Cutscene/Lab/Pillar_Rise
+      maxAttenuation: 0
+      maxDuration: 4.0715
+      minDuration: 4.0715
+    - name: Plague
+      guid: 33b883d3d841854bb170498c6e011310
+      id: 1131613591
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Plague
+        ObjectType: 4
+        guid: 33b883d3d841854bb170498c6e011310
+      Path: Events/Default Work Unit/Tower/Plague
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Plague_Bubble
+      guid: 915787f279fe8a4fb036bd5700a34501
+      id: 2035004424
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Plague
+        ObjectType: 4
+        guid: 33b883d3d841854bb170498c6e011310
+      - ElementName: Plague_Bubble
+        ObjectType: 3
+        guid: 915787f279fe8a4fb036bd5700a34501
+      Path: Events/Default Work Unit/Tower/Plague/Plague_Bubble
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Plague_Shot
+      guid: fb2f39834b4d8048af0279d2638bb8f6
+      id: 2226036498
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Plague
+        ObjectType: 4
+        guid: 33b883d3d841854bb170498c6e011310
+      - ElementName: Plague_Shot
+        ObjectType: 3
+        guid: fb2f39834b4d8048af0279d2638bb8f6
+      Path: Events/Default Work Unit/Tower/Plague/Plague_Shot
+      maxAttenuation: 0
+      maxDuration: 1.4274644
+      minDuration: 1.1241734
+    - name: Savage
+      guid: d28c7b4b6ab1f54480017a5913265d3b
+      id: 1468109246
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      Path: Events/Default Work Unit/Enemy/Boss/Savage
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Savage
+      guid: 8f13218a8063c54484afc994b8103d64
+      id: 1468109246
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      - ElementName: Savage
+        ObjectType: 4
+        guid: 8f13218a8063c54484afc994b8103d64
+      Path: Events/Default Work Unit/Cutscene/Savage
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Savage_CutScene_Dust
+      guid: 10e2c431ce7ca2419fb544f15ac22f88
+      id: 66490368
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      - ElementName: Savage
+        ObjectType: 4
+        guid: 8f13218a8063c54484afc994b8103d64
+      - ElementName: Savage_CutScene_Dust
+        ObjectType: 3
+        guid: 10e2c431ce7ca2419fb544f15ac22f88
+      Path: Events/Default Work Unit/Cutscene/Savage/Savage_CutScene_Dust
+      maxAttenuation: 0
+      maxDuration: 2.266
+      minDuration: 2.266
+    - name: Savage_CutScene_Roar
+      guid: b100435398321b46a468aebca8672ffb
+      id: 1628602608
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      - ElementName: Savage
+        ObjectType: 4
+        guid: 8f13218a8063c54484afc994b8103d64
+      - ElementName: Savage_CutScene_Roar
+        ObjectType: 3
+        guid: b100435398321b46a468aebca8672ffb
+      Path: Events/Default Work Unit/Cutscene/Savage/Savage_CutScene_Roar
+      maxAttenuation: 0
+      maxDuration: 2.7225397
+      minDuration: 2.7225397
+    - name: Savage_CutScene_Rumble
+      guid: c89ccf29fb56c4428f8d1dcc7f6633f0
+      id: 2661203955
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      - ElementName: Savage
+        ObjectType: 4
+        guid: 8f13218a8063c54484afc994b8103d64
+      - ElementName: Savage_CutScene_Rumble
+        ObjectType: 3
+        guid: c89ccf29fb56c4428f8d1dcc7f6633f0
+      Path: Events/Default Work Unit/Cutscene/Savage/Savage_CutScene_Rumble
+      maxAttenuation: 0
+      maxDuration: 5.921088
+      minDuration: 5.921088
+    - name: Savage_Meteor_Fall
+      guid: ef9394032743ba4a8d7cbafd17621fe5
+      id: 2390516159
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Meteor
+        ObjectType: 4
+        guid: 95f61a6edd511548bd4ce2198f8f25bd
+      - ElementName: Savage_Meteor_Fall
+        ObjectType: 3
+        guid: ef9394032743ba4a8d7cbafd17621fe5
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Meteor/Savage_Meteor_Fall
+      maxAttenuation: 0
+      maxDuration: 0.5231746
+      minDuration: 0.48423415
+    - name: Savage_Meteor_Rise
+      guid: 638dcde23956b445a5e8e1c1e3212e9a
+      id: 627988779
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Meteor
+        ObjectType: 4
+        guid: 95f61a6edd511548bd4ce2198f8f25bd
+      - ElementName: Savage_Meteor_Rise
+        ObjectType: 3
+        guid: 638dcde23956b445a5e8e1c1e3212e9a
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Meteor/Savage_Meteor_Rise
+      maxAttenuation: 0
+      maxDuration: 0.31492063
+      minDuration: 0.26647732
+    - name: Savage_Meteor_Slam
+      guid: db97b4eeb985c940aba0113079931d78
+      id: 2477439771
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Meteor
+        ObjectType: 4
+        guid: 95f61a6edd511548bd4ce2198f8f25bd
+      - ElementName: Savage_Meteor_Slam
+        ObjectType: 3
+        guid: db97b4eeb985c940aba0113079931d78
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Meteor/Savage_Meteor_Slam
+      maxAttenuation: 0
+      maxDuration: 0.7326304
+      minDuration: 0.7117738
+    - name: Savage_Perish
+      guid: 1b0918d3d81ea045988568a7419bba5a
+      id: 2927270538
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Savage_Perish
+        ObjectType: 3
+        guid: 1b0918d3d81ea045988568a7419bba5a
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Savage_Perish
+      maxAttenuation: 0
+      maxDuration: 3.5657144
+      minDuration: 3.5657144
+    - name: Savage_Roam
+      guid: ba259af9eb58234cb832f0b2554281c1
+      id: 1203288774
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Savage_Roam
+        ObjectType: 3
+        guid: ba259af9eb58234cb832f0b2554281c1
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Savage_Roam
+      maxAttenuation: 0
+      maxDuration: 2.2857144
+      minDuration: 0
+    - name: Savage_Slam
+      guid: d922367b0a41604cbeef12ac4babe5a4
+      id: 4208607350
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Slam
+        ObjectType: 4
+        guid: 9af331ac3639a349a75f3e8ea7a9cef7
+      - ElementName: Savage_Slam
+        ObjectType: 3
+        guid: d922367b0a41604cbeef12ac4babe5a4
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Slam/Savage_Slam
+      maxAttenuation: 0
+      maxDuration: 8.366349
+      minDuration: 8.3584795
+    - name: Savage_Spin
+      guid: f85565ef4b814e48ba4681574103ae40
+      id: 4210578753
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Spin
+        ObjectType: 4
+        guid: a305f5192703a148b19c320281c66467
+      - ElementName: Savage_Spin
+        ObjectType: 3
+        guid: f85565ef4b814e48ba4681574103ae40
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Spin/Savage_Spin
+      maxAttenuation: 0
+      maxDuration: 0.46730158
+      minDuration: 0.000988514
+    - name: Savage_Spin_Earth_Play
+      guid: c2df4230028c374ea79e243b5aae653f
+      id: 2012794953
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Spin
+        ObjectType: 4
+        guid: a305f5192703a148b19c320281c66467
+      - ElementName: Savage_Spin_Earth_Play
+        ObjectType: 3
+        guid: c2df4230028c374ea79e243b5aae653f
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Spin/Savage_Spin_Earth_Play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Savage_Spin_Earth_Stop
+      guid: a31946ee82fff4429d6311b5a080e698
+      id: 3535315055
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Spin
+        ObjectType: 4
+        guid: a305f5192703a148b19c320281c66467
+      - ElementName: Savage_Spin_Earth_Stop
+        ObjectType: 3
+        guid: a31946ee82fff4429d6311b5a080e698
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Spin/Savage_Spin_Earth_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Savage_Spin_End
+      guid: b1519c231ca44244812b1a41fe77c183
+      id: 62144163
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Spin
+        ObjectType: 4
+        guid: a305f5192703a148b19c320281c66467
+      - ElementName: Savage_Spin_End
+        ObjectType: 3
+        guid: b1519c231ca44244812b1a41fe77c183
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Spin/Savage_Spin_End
+      maxAttenuation: 0
+      maxDuration: 0.69079363
+      minDuration: 0.68681496
+    - name: Savage_Spin_Start
+      guid: 37ae655bdbf3e743878641b93e4f9588
+      id: 1697413752
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Spin
+        ObjectType: 4
+        guid: a305f5192703a148b19c320281c66467
+      - ElementName: Savage_Spin_Start
+        ObjectType: 3
+        guid: 37ae655bdbf3e743878641b93e4f9588
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Spin/Savage_Spin_Start
+      maxAttenuation: 0
+      maxDuration: 0.60952383
+      minDuration: 0.60601324
+    - name: Scaramite
+      guid: 4d2a165ad23efa44979a51a611aca914
+      id: 709596380
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Scaramite
+        ObjectType: 4
+        guid: 4d2a165ad23efa44979a51a611aca914
+      Path: Events/Default Work Unit/Enemy/Mob/Scaramite
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Scaramite_Aggro
+      guid: 5ae7d26a1c0a4d46a869b43dfd4091f5
+      id: 3158569827
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Scaramite
+        ObjectType: 4
+        guid: 4d2a165ad23efa44979a51a611aca914
+      - ElementName: Scaramite_Aggro
+        ObjectType: 3
+        guid: 5ae7d26a1c0a4d46a869b43dfd4091f5
+      Path: Events/Default Work Unit/Enemy/Mob/Scaramite/Scaramite_Aggro
+      maxAttenuation: 0
+      maxDuration: 0.9867263
+      minDuration: 0
+    - name: Sentinel
+      guid: 0fe3f3479fb4184bbe381fafca981aeb
+      id: 4213693489
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Sentinel
+        ObjectType: 4
+        guid: 0fe3f3479fb4184bbe381fafca981aeb
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Sentinel
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sentinel_Charge_Attack
+      guid: 69bacbdce45c1442ba209397eb8c460e
+      id: 3654774999
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Sentinel
+        ObjectType: 4
+        guid: 0fe3f3479fb4184bbe381fafca981aeb
+      - ElementName: Charge
+        ObjectType: 4
+        guid: 88fbe9c2f10ddb4493f57d852bb70e5c
+      - ElementName: Sentinel_Charge_Attack
+        ObjectType: 3
+        guid: 69bacbdce45c1442ba209397eb8c460e
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Sentinel/Charge/Sentinel_Charge_Attack
+      maxAttenuation: 0
+      maxDuration: 0.56603116
+      minDuration: 0.5595298
+    - name: Sentinel_Charge_warn
+      guid: 3326fc3b0bd43b4fa50b7aa3fc67b183
+      id: 3598361267
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Sentinel
+        ObjectType: 4
+        guid: 0fe3f3479fb4184bbe381fafca981aeb
+      - ElementName: Charge
+        ObjectType: 4
+        guid: 88fbe9c2f10ddb4493f57d852bb70e5c
+      - ElementName: Sentinel_Charge_warn
+        ObjectType: 3
+        guid: 3326fc3b0bd43b4fa50b7aa3fc67b183
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Sentinel/Charge/Sentinel_Charge_warn
+      maxAttenuation: 0
+      maxDuration: 1.9311224
+      minDuration: 1.9089415
+    - name: Sentinel_Sweep_Warn
+      guid: 5ce95ca166fe664fbd9ac08fd80f9b7c
+      id: 215180023
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Sentinel
+        ObjectType: 4
+        guid: 0fe3f3479fb4184bbe381fafca981aeb
+      - ElementName: Sentinel_Sweep_Warn
+        ObjectType: 3
+        guid: 5ce95ca166fe664fbd9ac08fd80f9b7c
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Sentinel/Sentinel_Sweep_Warn
+      maxAttenuation: 0
+      maxDuration: 0.5415873
+      minDuration: 0.52616936
+    - name: Siftling
+      guid: 6e8c17e8b30e6344ba3f142cedba6633
+      id: 1204149167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Siftling
+        ObjectType: 4
+        guid: 6e8c17e8b30e6344ba3f142cedba6633
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Siftling
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Siftling_Tornado
+      guid: ef2e952dae5d1e4db6db860f5aa0ab4c
+      id: 3724824085
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Siftling
+        ObjectType: 4
+        guid: 6e8c17e8b30e6344ba3f142cedba6633
+      - ElementName: Siftling_Tornado
+        ObjectType: 3
+        guid: ef2e952dae5d1e4db6db860f5aa0ab4c
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Siftling/Siftling_Tornado
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Slam
+      guid: 9af331ac3639a349a75f3e8ea7a9cef7
+      id: 821159926
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Slam
+        ObjectType: 4
+        guid: 9af331ac3639a349a75f3e8ea7a9cef7
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Slam
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Slither
+      guid: 9718deb74889aa4faa0dd2e278ce7080
+      id: 3841889844
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Slither
+        ObjectType: 4
+        guid: 9718deb74889aa4faa0dd2e278ce7080
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Slither
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Slither_Sweep_Warn
+      guid: 216cc17911e29f4cb0c25749e49de9af
+      id: 2724729948
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Slither
+        ObjectType: 4
+        guid: 9718deb74889aa4faa0dd2e278ce7080
+      - ElementName: Slither_Sweep_Warn
+        ObjectType: 3
+        guid: 216cc17911e29f4cb0c25749e49de9af
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Slither/Slither_Sweep_Warn
+      maxAttenuation: 0
+      maxDuration: 1.3061224
+      minDuration: 1.2689396
+    - name: Slither_Zig_Attack
+      guid: 8150ebf179c8e145b999ef74f6f1fc98
+      id: 2231631038
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Slither
+        ObjectType: 4
+        guid: 9718deb74889aa4faa0dd2e278ce7080
+      - ElementName: Zig
+        ObjectType: 4
+        guid: ebb293ed7bc9464ba237d5e4e9a36b48
+      - ElementName: Slither_Zig_Attack
+        ObjectType: 3
+        guid: 8150ebf179c8e145b999ef74f6f1fc98
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Slither/Zig/Slither_Zig_Attack
+      maxAttenuation: 0
+      maxDuration: 0.73142856
+      minDuration: 0.7230274
+    - name: Slither_Zig_Warn
+      guid: 3505c6dbc1ed15409058fd4c3313499d
+      id: 1911758058
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Slither
+        ObjectType: 4
+        guid: 9718deb74889aa4faa0dd2e278ce7080
+      - ElementName: Zig
+        ObjectType: 4
+        guid: ebb293ed7bc9464ba237d5e4e9a36b48
+      - ElementName: Slither_Zig_Warn
+        ObjectType: 3
+        guid: 3505c6dbc1ed15409058fd4c3313499d
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Slither/Zig/Slither_Zig_Warn
+      maxAttenuation: 0
+      maxDuration: 0.50793654
+      minDuration: 0.4739889
+    - name: Sniper
+      guid: 97a982802f5e8a48a8c8ace1d2f75f57
+      id: 2550763292
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Sniper
+        ObjectType: 4
+        guid: 97a982802f5e8a48a8c8ace1d2f75f57
+      Path: Events/Default Work Unit/Tower/Sniper
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sniper_Fire
+      guid: c38f8bb20e82904c9596a34a4b14e3fd
+      id: 2657820951
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Sniper
+        ObjectType: 4
+        guid: 97a982802f5e8a48a8c8ace1d2f75f57
+      - ElementName: Sniper_Fire
+        ObjectType: 3
+        guid: c38f8bb20e82904c9596a34a4b14e3fd
+      Path: Events/Default Work Unit/Tower/Sniper/Sniper_Fire
+      maxAttenuation: 0
+      maxDuration: 2.2817135
+      minDuration: 2.0923405
+    - name: Sovereign
+      guid: 63cea0a92608db41844b464427109ab5
+      id: 598779819
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sovereign_Activate
+      guid: 4380562471e8d844b0ac9c031467266b
+      id: 3855990057
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Sovereign_Activate
+        ObjectType: 3
+        guid: 4380562471e8d844b0ac9c031467266b
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Sovereign_Activate
+      maxAttenuation: 0
+      maxDuration: 1.1982292
+      minDuration: 1.1982292
+    - name: Sovereign_Collapse_Voice
+      guid: 6eb30577ebe7fe4e9799ddb9ab20fefa
+      id: 2396538904
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Sovereign_Collapse_Voice
+        ObjectType: 3
+        guid: 6eb30577ebe7fe4e9799ddb9ab20fefa
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Sovereign_Collapse_Voice
+      maxAttenuation: 0
+      maxDuration: 1.6171042
+      minDuration: 1.6171042
+    - name: Sovereign_Laser_Loop_Play
+      guid: 51a71acdab86784496b6f132f5fd4ebe
+      id: 2398591641
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Sovereign_Laser_Loop_Play
+        ObjectType: 3
+        guid: 51a71acdab86784496b6f132f5fd4ebe
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Sovereign_Laser_Loop_Play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sovereign_Laser_Loop_Stop
+      guid: 09ff717ed5355241bc219498036600ea
+      id: 694689247
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Sovereign_Laser_Loop_Stop
+        ObjectType: 3
+        guid: 09ff717ed5355241bc219498036600ea
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Sovereign_Laser_Loop_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Sovereign_Laser_Trigger_Play
+      guid: 993fb7bbef091847ad86a7599b1731d7
+      id: 1342240583
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Sovereign_Laser_Trigger_Play
+        ObjectType: 3
+        guid: 993fb7bbef091847ad86a7599b1731d7
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Sovereign_Laser_Trigger_Play
+      maxAttenuation: 0
+      maxDuration: 2.0087261
+      minDuration: 1.8420099
+    - name: Sovereign_Paw
+      guid: bc5b422da8a0ab49915f5c4b0b73db0c
+      id: 1473386410
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Sovereign_Paw
+        ObjectType: 3
+        guid: bc5b422da8a0ab49915f5c4b0b73db0c
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Sovereign_Paw
+      maxAttenuation: 0
+      maxDuration: 3.3663492
+      minDuration: 3.3584795
+    - name: Sovereign_Roar
+      guid: 17cf0ad5a4cacb4186e0f42b54c8b345
+      id: 4068999422
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Sovereign_Roar
+        ObjectType: 3
+        guid: 17cf0ad5a4cacb4186e0f42b54c8b345
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Sovereign_Roar
+      maxAttenuation: 0
+      maxDuration: 7.58722
+      minDuration: 7.5000734
+    - name: Sovereign_Static_Voice
+      guid: 89e91c11f82a88488d7a62490cf8b8de
+      id: 1686102659
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Sovereign_Static_Voice
+        ObjectType: 3
+        guid: 89e91c11f82a88488d7a62490cf8b8de
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Sovereign_Static_Voice
+      maxAttenuation: 0
+      maxDuration: 1.6113958
+      minDuration: 1.6113958
+    - name: Sovereign_Swipe_Voice
+      guid: 51a1f55c6293cf4197342418e0c85876
+      id: 3134934187
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Sovereign_Swipe_Voice
+        ObjectType: 3
+        guid: 51a1f55c6293cf4197342418e0c85876
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Sovereign_Swipe_Voice
+      maxAttenuation: 0
+      maxDuration: 1.605375
+      minDuration: 1.605375
+    - name: Spin
+      guid: a305f5192703a148b19c320281c66467
+      id: 823131329
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Savage
+        ObjectType: 4
+        guid: d28c7b4b6ab1f54480017a5913265d3b
+      - ElementName: Spin
+        ObjectType: 4
+        guid: a305f5192703a148b19c320281c66467
+      Path: Events/Default Work Unit/Enemy/Boss/Savage/Spin
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stair_Rise
+      guid: f5fae3143b8ef244baf0f008d5de781c
+      id: 656549100
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      - ElementName: Lab
+        ObjectType: 4
+        guid: 94f91e6e70b1a04fb18a15a116a28651
+      - ElementName: Stair_Rise
+        ObjectType: 3
+        guid: f5fae3143b8ef244baf0f008d5de781c
+      Path: Events/Default Work Unit/Cutscene/Lab/Stair_Rise
+      maxAttenuation: 0
+      maxDuration: 4.1879168
+      minDuration: 4.1879168
+    - name: StopAll
+      guid: 00012a5e48518c4480a99fe4f208a3c0
+      id: 3086540886
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: StopAll
+        ObjectType: 3
+        guid: 00012a5e48518c4480a99fe4f208a3c0
+      Path: Events/Default Work Unit/StopAll
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Summon
+      guid: fd629635ed03eb4c80c68c799e68e540
+      id: 4092338576
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      - ElementName: Summon
+        ObjectType: 4
+        guid: fd629635ed03eb4c80c68c799e68e540
+      Path: Events/Default Work Unit/UI/Summon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Summon_Collapse
+      guid: e3c778cf58c1a4468810436f731145e8
+      id: 4063454882
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      - ElementName: Summon
+        ObjectType: 4
+        guid: fd629635ed03eb4c80c68c799e68e540
+      - ElementName: Summon_Collapse
+        ObjectType: 3
+        guid: e3c778cf58c1a4468810436f731145e8
+      Path: Events/Default Work Unit/UI/Summon/Summon_Collapse
+      maxAttenuation: 0
+      maxDuration: 1.9083611
+      minDuration: 1.8864416
+    - name: Summon_Invalid
+      guid: ecb484e5ae7d6144b01fae33963be2f5
+      id: 535167848
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      - ElementName: Summon
+        ObjectType: 4
+        guid: fd629635ed03eb4c80c68c799e68e540
+      - ElementName: Summon_Invalid
+        ObjectType: 3
+        guid: ecb484e5ae7d6144b01fae33963be2f5
+      Path: Events/Default Work Unit/UI/Summon/Summon_Invalid
+      maxAttenuation: 0
+      maxDuration: 0.37544483
+      minDuration: 0.37501132
+    - name: Summon_Place
+      guid: 3d71ac07ec582646a4220f0a9f20db5d
+      id: 4109110236
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      - ElementName: Summon
+        ObjectType: 4
+        guid: fd629635ed03eb4c80c68c799e68e540
+      - ElementName: Summon_Place
+        ObjectType: 3
+        guid: 3d71ac07ec582646a4220f0a9f20db5d
+      Path: Events/Default Work Unit/UI/Summon/Summon_Place
+      maxAttenuation: 0
+      maxDuration: 1.3628434
+      minDuration: 1.359698
+    - name: Summon_Select
+      guid: 32f5a67b6e84684a92172dcef52381da
+      id: 3328317015
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      - ElementName: Summon
+        ObjectType: 4
+        guid: fd629635ed03eb4c80c68c799e68e540
+      - ElementName: Summon_Select
+        ObjectType: 3
+        guid: 32f5a67b6e84684a92172dcef52381da
+      Path: Events/Default Work Unit/UI/Summon/Summon_Select
+      maxAttenuation: 0
+      maxDuration: 0.6711471
+      minDuration: 0.6334785
+    - name: Summon_Switch
+      guid: 0937c7d687a2b5478bc0cd1d8b11401b
+      id: 3350963763
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      - ElementName: Summon
+        ObjectType: 4
+        guid: fd629635ed03eb4c80c68c799e68e540
+      - ElementName: Summon_Switch
+        ObjectType: 3
+        guid: 0937c7d687a2b5478bc0cd1d8b11401b
+      Path: Events/Default Work Unit/UI/Summon/Summon_Switch
+      maxAttenuation: 0
+      maxDuration: 0.3331831
+      minDuration: 0.33126414
+    - name: Temple_Quake
+      guid: 0962cd70193f664fa7dab36c57dbde7d
+      id: 79843292
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      - ElementName: Lab
+        ObjectType: 4
+        guid: 94f91e6e70b1a04fb18a15a116a28651
+      - ElementName: Temple_Quake
+        ObjectType: 3
+        guid: 0962cd70193f664fa7dab36c57dbde7d
+      Path: Events/Default Work Unit/Cutscene/Lab/Temple_Quake
+      maxAttenuation: 0
+      maxDuration: 13.925917
+      minDuration: 13.925917
+    - name: Temporal
+      guid: 87bcab6f484a9343bfd3ed06324720a5
+      id: 2319975935
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Temporal
+        ObjectType: 4
+        guid: 87bcab6f484a9343bfd3ed06324720a5
+      Path: Events/Default Work Unit/Tower/Temporal
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Temporal_Reverse
+      guid: 7148f8e7d5e91e4183d22bf76a5410f2
+      id: 4267114648
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Temporal
+        ObjectType: 4
+        guid: 87bcab6f484a9343bfd3ed06324720a5
+      - ElementName: Temporal_Reverse
+        ObjectType: 3
+        guid: 7148f8e7d5e91e4183d22bf76a5410f2
+      Path: Events/Default Work Unit/Tower/Temporal/Temporal_Reverse
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Tower
+      guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      id: 1737926756
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      Path: Events/Default Work Unit/Tower
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Tower_Damage
+      guid: 080529436acf1546804731fbd12bd7f2
+      id: 4040281772
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Damage
+        ObjectType: 4
+        guid: 7e275483ab79fb49b11459e88a71d6ee
+      - ElementName: Tower_Damage
+        ObjectType: 3
+        guid: 080529436acf1546804731fbd12bd7f2
+      Path: Events/Default Work Unit/Health/Damage/Tower_Damage
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI
+      guid: 65de6d2f1fe7234a8f798e285e5c993f
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: UI
+        ObjectType: 4
+        guid: 65de6d2f1fe7234a8f798e285e5c993f
+      Path: Events/Default Work Unit/UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Waterfall_Loop
+      guid: 095da8c85e10434380473228dabd2373
+      id: 1873129830
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      - ElementName: Lab
+        ObjectType: 4
+        guid: 94f91e6e70b1a04fb18a15a116a28651
+      - ElementName: Waterfall_Loop
+        ObjectType: 3
+        guid: 095da8c85e10434380473228dabd2373
+      Path: Events/Default Work Unit/Cutscene/Lab/Waterfall_Loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Wind
+      guid: de919613dd72bf4fb408c6ea34cd32f4
+      id: 1537061107
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Wind
+        ObjectType: 4
+        guid: de919613dd72bf4fb408c6ea34cd32f4
+      Path: Events/Default Work Unit/Tower/Wind
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Wind_Burst
+      guid: f66ee192186331499c2c8869d398fafc
+      id: 118255496
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Tower
+        ObjectType: 4
+        guid: e35fa12912bd514d8cc62f9c2acc3cfd
+      - ElementName: Wind
+        ObjectType: 4
+        guid: de919613dd72bf4fb408c6ea34cd32f4
+      - ElementName: Wind_Burst
+        ObjectType: 3
+        guid: f66ee192186331499c2c8869d398fafc
+      Path: Events/Default Work Unit/Tower/Wind/Wind_Burst
+      maxAttenuation: 0
+      maxDuration: 1.6403375
+      minDuration: 1.602872
+    - name: Yan
+      guid: 6b57ea3bd69586459271cbcfa17a541f
+      id: 912360423
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Yan
+        ObjectType: 4
+        guid: 6b57ea3bd69586459271cbcfa17a541f
+      Path: Events/Default Work Unit/Yan
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Yan_Damage
+      guid: 51d7931db3c29240855e7033a72588c2
+      id: 1037416985
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Damage
+        ObjectType: 4
+        guid: 7e275483ab79fb49b11459e88a71d6ee
+      - ElementName: Yan_Damage
+        ObjectType: 3
+        guid: 51d7931db3c29240855e7033a72588c2
+      Path: Events/Default Work Unit/Health/Damage/Yan_Damage
+      maxAttenuation: 0
+      maxDuration: 0.6955701
+      minDuration: 0.61968255
+    - name: Yan_Dodge
+      guid: 1ce08f042942d740a1bc6723f5b14169
+      id: 2534221411
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Yan
+        ObjectType: 4
+        guid: 6b57ea3bd69586459271cbcfa17a541f
+      - ElementName: Yan_Dodge
+        ObjectType: 3
+        guid: 1ce08f042942d740a1bc6723f5b14169
+      Path: Events/Default Work Unit/Yan/Yan_Dodge
+      maxAttenuation: 0
+      maxDuration: 0.18095239
+      minDuration: 0.16121024
+    - name: Yan_Heal
+      guid: db4fc0a46dd2cb438b0c7f2bfca42b86
+      id: 3381015472
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Health
+        ObjectType: 4
+        guid: 5786cc69da2a1848af1da49864f6907b
+      - ElementName: Heal
+        ObjectType: 4
+        guid: 92cff13b351ba644af0e38b681eeddeb
+      - ElementName: Yan_Heal
+        ObjectType: 3
+        guid: db4fc0a46dd2cb438b0c7f2bfca42b86
+      Path: Events/Default Work Unit/Health/Heal/Yan_Heal
+      maxAttenuation: 0
+      maxDuration: 0.98975056
+      minDuration: 0.9783823
+    - name: Yan_Melee
+      guid: 92017c83acc5d943963d7fa53e530f1c
+      id: 1527085362
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Yan
+        ObjectType: 4
+        guid: 6b57ea3bd69586459271cbcfa17a541f
+      - ElementName: Yan_Melee
+        ObjectType: 3
+        guid: 92017c83acc5d943963d7fa53e530f1c
+      Path: Events/Default Work Unit/Yan/Yan_Melee
+      maxAttenuation: 0
+      maxDuration: 1.7802404
+      minDuration: 0.91585296
+    - name: Yan_Teleport
+      guid: fda51b10b83a5b4f9b85ee5177dfc30e
+      id: 1881281259
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Yan
+        ObjectType: 4
+        guid: 6b57ea3bd69586459271cbcfa17a541f
+      - ElementName: Yan_Teleport
+        ObjectType: 3
+        guid: fda51b10b83a5b4f9b85ee5177dfc30e
+      Path: Events/Default Work Unit/Yan/Yan_Teleport
+      maxAttenuation: 0
+      maxDuration: 0.38477013
+      minDuration: 0.35283574
+    - name: Yan_Tornado
+      guid: 944b072a69e128418deec7e964d85d43
+      id: 1315475245
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Yan
+        ObjectType: 4
+        guid: 6b57ea3bd69586459271cbcfa17a541f
+      - ElementName: Yan_Tornado
+        ObjectType: 3
+        guid: 944b072a69e128418deec7e964d85d43
+      Path: Events/Default Work Unit/Yan/Yan_Tornado
+      maxAttenuation: 0
+      maxDuration: 1.66901
+      minDuration: 1.5753356
+    - name: Zig
+      guid: ebb293ed7bc9464ba237d5e4e9a36b48
+      id: 1180552005
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Mob
+        ObjectType: 4
+        guid: 72fd6a82f50f8740b4108b55e1905995
+      - ElementName: Golem
+        ObjectType: 4
+        guid: 8b08a6c2477dd447a704485e4b31de9e
+      - ElementName: Slither
+        ObjectType: 4
+        guid: 9718deb74889aa4faa0dd2e278ce7080
+      - ElementName: Zig
+        ObjectType: 4
+        guid: ebb293ed7bc9464ba237d5e4e9a36b48
+      Path: Events/Default Work Unit/Enemy/Mob/Golem/Slither/Zig
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 9d32bd687e9724428c6bfc99a59407c1
+    ParentPath: Game Parameters/Default Work Unit
+    guid: 9d32bd687e9724428c6bfc99a59407c1
+    GuidInternal: 
+    m_lastTime: -8584283158491076443
+    List: []
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 63e3715edbdeb44b932f2618f7f84d44
+    ParentPath: States/Default Work Unit
+    guid: 63e3715edbdeb44b932f2618f7f84d44
+    GuidInternal: 
+    m_lastTime: -8584281344482010630
+    List:
+    - name: Music
+      guid: 837f2b984892b047beb29ba70e262699
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63e3715edbdeb44b932f2618f7f84d44
+      - ElementName: Music
+        ObjectType: 9
+        guid: 837f2b984892b047beb29ba70e262699
+      Path: States/Default Work Unit/Music
+      values:
+      - name: Checkpoint
+        guid: ee8b900d937df44caa3fde3ad770d4a1
+        id: 612075679
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 63e3715edbdeb44b932f2618f7f84d44
+        - ElementName: Music
+          ObjectType: 9
+          guid: 837f2b984892b047beb29ba70e262699
+        - ElementName: Checkpoint
+          ObjectType: 8
+          guid: ee8b900d937df44caa3fde3ad770d4a1
+      - name: Combat_Brimstone
+        guid: 31be4ac1e13e894aae26bb869cc49357
+        id: 3328100817
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 63e3715edbdeb44b932f2618f7f84d44
+        - ElementName: Music
+          ObjectType: 9
+          guid: 837f2b984892b047beb29ba70e262699
+        - ElementName: Combat_Brimstone
+          ObjectType: 8
+          guid: 31be4ac1e13e894aae26bb869cc49357
+      - name: Combat_Catacomb
+        guid: 423a80c72426ab4f83eed6d8908519c0
+        id: 2449594894
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 63e3715edbdeb44b932f2618f7f84d44
+        - ElementName: Music
+          ObjectType: 9
+          guid: 837f2b984892b047beb29ba70e262699
+        - ElementName: Combat_Catacomb
+          ObjectType: 8
+          guid: 423a80c72426ab4f83eed6d8908519c0
+      - name: Combat_Sovereign
+        guid: 1b549a5f2f3a104f8b937d65bbcf977e
+        id: 1968481852
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 63e3715edbdeb44b932f2618f7f84d44
+        - ElementName: Music
+          ObjectType: 9
+          guid: 837f2b984892b047beb29ba70e262699
+        - ElementName: Combat_Sovereign
+          ObjectType: 8
+          guid: 1b549a5f2f3a104f8b937d65bbcf977e
+      - name: None
+        guid: 583aa22f0749344b92be2bea09323f00
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 63e3715edbdeb44b932f2618f7f84d44
+        - ElementName: Music
+          ObjectType: 9
+          guid: 837f2b984892b047beb29ba70e262699
+        - ElementName: None
+          ObjectType: 8
+          guid: 583aa22f0749344b92be2bea09323f00
+      - name: Story
+        guid: b2c346131031734391174c461b07c831
+        id: 1686739444
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 63e3715edbdeb44b932f2618f7f84d44
+        - ElementName: Music
+          ObjectType: 9
+          guid: 837f2b984892b047beb29ba70e262699
+        - ElementName: Story
+          ObjectType: 8
+          guid: b2c346131031734391174c461b07c831
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 108dd1065c59cf499780fa9d9ae46c3b
+    ParentPath: Switches/Default Work Unit
+    guid: 108dd1065c59cf499780fa9d9ae46c3b
+    GuidInternal: 
+    m_lastTime: -8584271073602047065
+    List:
+    - name: Mana_Sufficiency
+      guid: ba0862fee43f224daf8712744c3108e0
+      id: 2948931413
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 108dd1065c59cf499780fa9d9ae46c3b
+      - ElementName: Mana_Sufficiency
+        ObjectType: 11
+        guid: ba0862fee43f224daf8712744c3108e0
+      Path: Switches/Default Work Unit/Mana_Sufficiency
+      values:
+      - name: Insufficient
+        guid: 4259df390551c642a6e54c37b427c338
+        id: 2362687100
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Mana_Sufficiency
+          ObjectType: 11
+          guid: ba0862fee43f224daf8712744c3108e0
+        - ElementName: Insufficient
+          ObjectType: 10
+          guid: 4259df390551c642a6e54c37b427c338
+      - name: Sufficient
+        guid: 449fcb36be17aa4b988aafc44eaa7d38
+        id: 1041257717
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Mana_Sufficiency
+          ObjectType: 11
+          guid: ba0862fee43f224daf8712744c3108e0
+        - ElementName: Sufficient
+          ObjectType: 10
+          guid: 449fcb36be17aa4b988aafc44eaa7d38
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Siftling_Tornado
+      guid: cf3975a7f265d24c8cdec671edc39974
+      id: 3724824085
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 108dd1065c59cf499780fa9d9ae46c3b
+      - ElementName: Siftling_Tornado
+        ObjectType: 11
+        guid: cf3975a7f265d24c8cdec671edc39974
+      Path: Switches/Default Work Unit/Siftling_Tornado
+      values:
+      - name: Fire
+        guid: 9a40ad488f136e4ea2b2985da4b94a0a
+        id: 2678880713
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Siftling_Tornado
+          ObjectType: 11
+          guid: cf3975a7f265d24c8cdec671edc39974
+        - ElementName: Fire
+          ObjectType: 10
+          guid: 9a40ad488f136e4ea2b2985da4b94a0a
+      - name: Normal
+        guid: a9e8f2b3d1bf754eb3e762d9e06f82a5
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Siftling_Tornado
+          ObjectType: 11
+          guid: cf3975a7f265d24c8cdec671edc39974
+        - ElementName: Normal
+          ObjectType: 10
+          guid: a9e8f2b3d1bf754eb3e762d9e06f82a5
+      - name: Water
+        guid: 7201c79d24fe6843893c443027995a36
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Siftling_Tornado
+          ObjectType: 11
+          guid: cf3975a7f265d24c8cdec671edc39974
+        - ElementName: Water
+          ObjectType: 10
+          guid: 7201c79d24fe6843893c443027995a36
+      - name: Wind
+        guid: 7522aa2da825914d81d8fc4f2753b1e6
+        id: 1537061107
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Siftling_Tornado
+          ObjectType: 11
+          guid: cf3975a7f265d24c8cdec671edc39974
+        - ElementName: Wind
+          ObjectType: 10
+          guid: 7522aa2da825914d81d8fc4f2753b1e6
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Tower_Damage
+      guid: 1ffc40ac4cfa634eab575c10933c2666
+      id: 4040281772
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 108dd1065c59cf499780fa9d9ae46c3b
+      - ElementName: Tower_Damage
+        ObjectType: 11
+        guid: 1ffc40ac4cfa634eab575c10933c2666
+      Path: Switches/Default Work Unit/Tower_Damage
+      values:
+      - name: Fire
+        guid: 8e318a1130e53246a347220b1e75ad24
+        id: 2678880713
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Tower_Damage
+          ObjectType: 11
+          guid: 1ffc40ac4cfa634eab575c10933c2666
+        - ElementName: Fire
+          ObjectType: 10
+          guid: 8e318a1130e53246a347220b1e75ad24
+      - name: Null
+        guid: 614c71ee1dbe354db4a9b9cb1c6d224e
+        id: 784127654
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Tower_Damage
+          ObjectType: 11
+          guid: 1ffc40ac4cfa634eab575c10933c2666
+        - ElementName: Null
+          ObjectType: 10
+          guid: 614c71ee1dbe354db4a9b9cb1c6d224e
+      - name: Physical
+        guid: 7d4c12bb824afc47b79109ee1a51d030
+        id: 3599694366
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Tower_Damage
+          ObjectType: 11
+          guid: 1ffc40ac4cfa634eab575c10933c2666
+        - ElementName: Physical
+          ObjectType: 10
+          guid: 7d4c12bb824afc47b79109ee1a51d030
+      - name: Poison
+        guid: 2c18e3810022f04aab3f7f03ead2b728
+        id: 1413156513
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Tower_Damage
+          ObjectType: 11
+          guid: 1ffc40ac4cfa634eab575c10933c2666
+        - ElementName: Poison
+          ObjectType: 10
+          guid: 2c18e3810022f04aab3f7f03ead2b728
+      - name: Shock
+        guid: d96b94517f27f1498038fe1953556499
+        id: 2836875581
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 108dd1065c59cf499780fa9d9ae46c3b
+        - ElementName: Tower_Damage
+          ObjectType: 11
+          guid: 1ffc40ac4cfa634eab575c10933c2666
+        - ElementName: Shock
+          ObjectType: 10
+          guid: d96b94517f27f1498038fe1953556499
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: d613e0f95232d446a681854800a1c866
+    ParentPath: Triggers/Default Work Unit
+    guid: d613e0f95232d446a681854800a1c866
+    GuidInternal: 
+    m_lastTime: -8584273296894031812
+    List: []
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 02000000040000000500000006000000080000000b0000000e0000001600000024000000330000004f0000007000000074000000
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 0
+  CurrentPluginConfig: 
