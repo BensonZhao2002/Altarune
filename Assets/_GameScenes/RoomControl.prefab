@@ -87,6 +87,18 @@ MonoBehaviour:
   defaultSpawnPoint: {fileID: 9079610533823873030}
   listener: {fileID: 4990318062084491901}
   doors: []
+  roomMusicState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e94de0d8bc53047b7af418ec5bfb476b,
+      type: 2}
+  musicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 746a2c5dca186460c8565216d5c7c4d7,
+      type: 2}
 --- !u!114 &4990318062084491901
 MonoBehaviour:
   m_ObjectHideFlags: 0
