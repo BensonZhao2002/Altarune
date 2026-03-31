@@ -308,7 +308,7 @@ public partial class SovereignGolem {
             sg.pawSlamMaster.DoAttack();
             sg.sfxPawSlamVoice.Play();
 
-            AkSoundEngine.PostEvent("Sovereign_Paw", sg.gameObject);
+            AkSoundEngine.PostEvent("Sovereign_Paw_Voice", sg.gameObject);
         }
 
         public override void Update(Sovereign_Input _) { }

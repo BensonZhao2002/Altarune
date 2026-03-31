@@ -75,6 +75,8 @@ public class HealthBar : MonoBehaviour
     }
 
     private void AttachedEntity_OnPerish(BaseObject _) {
+        AkSoundEngine.PostEvent("StopAll", gameObject);
+
         StopAllCoroutines();
         StartCoroutine(ToggleBar(false));
     }

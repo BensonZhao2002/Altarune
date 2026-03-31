@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SovereignSwipingLaserMaster : SovereignPhaseMaster<SwipingLaserProperties> {
@@ -46,9 +47,16 @@ public class SovereignSwipingLaserMaster : SovereignPhaseMaster<SwipingLaserProp
             if (!activeLasers.Contains(controller)) {
                 activeLasers.Add(controller);
                 controller.DoLaserSwipe(prevDirection, activeConfig.warningTime, activeConfig.swipeTime);
+                StartCoroutine(DoSwipeAudio());
                 break;
             }
         }
+    }
+
+    private IEnumerator DoSwipeAudio() {
+        AkSoundEngine.PostEvent("Sovereign_Static_Warn", gameObject);
+        yield return new WaitForSeconds(activeConfig.warningTime);
+        AkSoundEngine.PostEvent("Sovereign_Swipe_Attack", gameObject);
     }
 
     private void Controller_OnSwipeEnd(SovereignSwipingLaserController laser) {

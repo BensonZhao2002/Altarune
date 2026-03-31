@@ -33,6 +33,7 @@ public class PawSlam : MonoBehaviour {
         yield return new WaitForEndOfFrame();
         ClearContacts();
         sfxPawSlam.Play();
+        AkSoundEngine.PostEvent("Sovereign_Paw", gameObject);
         smoke.transform.position = transform.position + new Vector3(0f, 1f, 0f);
         smoke.Play();
         GM.CameraShakeManager.DoCameraShake(10f, 1f);

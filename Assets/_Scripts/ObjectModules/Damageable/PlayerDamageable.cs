@@ -35,6 +35,9 @@ public class PlayerDamageable : Damageable {
                 AkSoundEngine.PostEvent("Yan_Damage", gameObject);
                 
                 if (runtimeHP.Health <= 0) {
+                    AkSoundEngine.PostEvent("StopAllGlobal", gameObject);
+                    AkSoundEngine.PostEvent("Music_Play", gameObject);
+
                     ToggleIFrame(true);
                     GM.Instance.DoGameOver();
                 }

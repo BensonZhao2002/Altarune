@@ -135,8 +135,6 @@ public partial class GolemSiftling : Entity {
     }
 
     public override void Perish(bool immediate = false) {
-        AkSoundEngine.StopAll(gameObject);
-
         base.Perish(immediate);
         DetachModules();
 
@@ -146,5 +144,9 @@ public partial class GolemSiftling : Entity {
             enabled = false;
             Destroy(gameObject, 2);
         }
+    }
+
+    private void OnDisable() {
+        AkSoundEngine.StopAll(gameObject);
     }
 }

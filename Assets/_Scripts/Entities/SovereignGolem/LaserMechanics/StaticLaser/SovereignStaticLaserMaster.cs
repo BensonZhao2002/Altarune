@@ -86,13 +86,19 @@ public class SovereignStaticLaserMaster : SovereignPhaseMaster<StaticLaserProper
         SovereignStaticLaser laser;
         float warningTime, laserTime,
               timeStep = activeConfig.spawnTime / activeConfig.laserAmount;
+
         for (int i = 0; i < pickList.Count; i++) {
+            AkSoundEngine.PostEvent("Sovereign_Static_Warn", gameObject);
             warningTime = activeConfig.warningTime + timeStep * i;
             laserTime = activeConfig.laserTime - timeStep * i;
             laser = pickList[i];
             laser.Activate(warningTime, laserTime);
             activeLasers.Add(laser);
+
+            yield return new WaitForSeconds(warningTime);
+            AkSoundEngine.PostEvent("Sovereign_Static_Attack", gameObject);
         }
+
         if (waveCounter > 0) {
             yield return new WaitForSeconds(activeConfig.waveWait);
             DoLaserWave();
