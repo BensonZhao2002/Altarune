@@ -294,7 +294,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: ba66e1f0758b95479cbda4a5669b6001
     GuidInternal: 
-    m_lastTime: -8584269177763057877
+    m_lastTime: -8584267146660220291
     List:
     - name: Bat
       guid: 3d6f4ff857c2384cb53ecd513709d6ef
@@ -1200,6 +1200,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Paw
+      guid: 3b22fdead2f81c4bbd1751e4ac5288e0
+      id: 1249339683
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Paw
+        ObjectType: 4
+        guid: 3b22fdead2f81c4bbd1751e4ac5288e0
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Paw
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Perish
       guid: 489b3bdcde0c9846a53d361818cdbc9f
       id: 1929465354
@@ -1310,6 +1336,26 @@ MonoBehaviour:
       maxDuration: 1.4274644
       minDuration: 1.1241734
     - name: Savage
+      guid: 8f13218a8063c54484afc994b8103d64
+      id: 1468109246
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Cutscene
+        ObjectType: 4
+        guid: c5ed55b5286e0f4c950662885730cae4
+      - ElementName: Savage
+        ObjectType: 4
+        guid: 8f13218a8063c54484afc994b8103d64
+      Path: Events/Default Work Unit/Cutscene/Savage
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Savage
       guid: d28c7b4b6ab1f54480017a5913265d3b
       id: 1468109246
       PathAndIcons:
@@ -1329,26 +1375,6 @@ MonoBehaviour:
         ObjectType: 4
         guid: d28c7b4b6ab1f54480017a5913265d3b
       Path: Events/Default Work Unit/Enemy/Boss/Savage
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Savage
-      guid: 8f13218a8063c54484afc994b8103d64
-      id: 1468109246
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: ba66e1f0758b95479cbda4a5669b6001
-      - ElementName: Cutscene
-        ObjectType: 4
-        guid: c5ed55b5286e0f4c950662885730cae4
-      - ElementName: Savage
-        ObjectType: 4
-        guid: 8f13218a8063c54484afc994b8103d64
-      Path: Events/Default Work Unit/Cutscene/Savage
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2220,93 +2246,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.6171042
       minDuration: 1.6171042
-    - name: Sovereign_Laser_Loop_Play
-      guid: 51a71acdab86784496b6f132f5fd4ebe
-      id: 2398591641
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: ba66e1f0758b95479cbda4a5669b6001
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: aae72b5226c18849a09867aa8cae3c3b
-      - ElementName: Boss
-        ObjectType: 4
-        guid: a43abc8dc00bb148bd70aaa969f8183f
-      - ElementName: Sovereign
-        ObjectType: 4
-        guid: 63cea0a92608db41844b464427109ab5
-      - ElementName: Laser
-        ObjectType: 4
-        guid: 996d0efeeb366d4fad1721b1178a7595
-      - ElementName: Sovereign_Laser_Loop_Play
-        ObjectType: 3
-        guid: 51a71acdab86784496b6f132f5fd4ebe
-      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Sovereign_Laser_Loop_Play
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Sovereign_Laser_Loop_Stop
-      guid: 09ff717ed5355241bc219498036600ea
-      id: 694689247
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: ba66e1f0758b95479cbda4a5669b6001
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: aae72b5226c18849a09867aa8cae3c3b
-      - ElementName: Boss
-        ObjectType: 4
-        guid: a43abc8dc00bb148bd70aaa969f8183f
-      - ElementName: Sovereign
-        ObjectType: 4
-        guid: 63cea0a92608db41844b464427109ab5
-      - ElementName: Laser
-        ObjectType: 4
-        guid: 996d0efeeb366d4fad1721b1178a7595
-      - ElementName: Sovereign_Laser_Loop_Stop
-        ObjectType: 3
-        guid: 09ff717ed5355241bc219498036600ea
-      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Sovereign_Laser_Loop_Stop
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Sovereign_Laser_Trigger_Play
-      guid: 993fb7bbef091847ad86a7599b1731d7
-      id: 1342240583
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: ba66e1f0758b95479cbda4a5669b6001
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: aae72b5226c18849a09867aa8cae3c3b
-      - ElementName: Boss
-        ObjectType: 4
-        guid: a43abc8dc00bb148bd70aaa969f8183f
-      - ElementName: Sovereign
-        ObjectType: 4
-        guid: 63cea0a92608db41844b464427109ab5
-      - ElementName: Laser
-        ObjectType: 4
-        guid: 996d0efeeb366d4fad1721b1178a7595
-      - ElementName: Sovereign_Laser_Trigger_Play
-        ObjectType: 3
-        guid: 993fb7bbef091847ad86a7599b1731d7
-      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Sovereign_Laser_Trigger_Play
-      maxAttenuation: 0
-      maxDuration: 2.0087261
-      minDuration: 1.8420099
     - name: Sovereign_Paw
       guid: bc5b422da8a0ab49915f5c4b0b73db0c
       id: 1473386410
@@ -2326,13 +2265,45 @@ MonoBehaviour:
       - ElementName: Sovereign
         ObjectType: 4
         guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Paw
+        ObjectType: 4
+        guid: 3b22fdead2f81c4bbd1751e4ac5288e0
       - ElementName: Sovereign_Paw
         ObjectType: 3
         guid: bc5b422da8a0ab49915f5c4b0b73db0c
-      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Sovereign_Paw
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Paw/Sovereign_Paw
       maxAttenuation: 0
       maxDuration: 3.3663492
       minDuration: 3.3584795
+    - name: Sovereign_Paw_Voice
+      guid: c71c210bcfc07e4584bdd63c0254ce30
+      id: 3020266573
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Paw
+        ObjectType: 4
+        guid: 3b22fdead2f81c4bbd1751e4ac5288e0
+      - ElementName: Sovereign_Paw_Voice
+        ObjectType: 3
+        guid: c71c210bcfc07e4584bdd63c0254ce30
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Paw/Sovereign_Paw_Voice
+      maxAttenuation: 0
+      maxDuration: 2.22325
+      minDuration: 2.22325
     - name: Sovereign_Roar
       guid: 17cf0ad5a4cacb4186e0f42b54c8b345
       id: 4068999422
@@ -2359,6 +2330,38 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 7.58722
       minDuration: 7.5000734
+    - name: Sovereign_Static_Attack
+      guid: 993fb7bbef091847ad86a7599b1731d7
+      id: 625004015
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Static
+        ObjectType: 4
+        guid: d29a09d8b078c14591b59bf74ec8c2c2
+      - ElementName: Sovereign_Static_Attack
+        ObjectType: 3
+        guid: 993fb7bbef091847ad86a7599b1731d7
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Static/Sovereign_Static_Attack
+      maxAttenuation: 0
+      maxDuration: 2.0087261
+      minDuration: 1.8420099
     - name: Sovereign_Static_Voice
       guid: 89e91c11f82a88488d7a62490cf8b8de
       id: 1686102659
@@ -2381,13 +2384,80 @@ MonoBehaviour:
       - ElementName: Laser
         ObjectType: 4
         guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Static
+        ObjectType: 4
+        guid: d29a09d8b078c14591b59bf74ec8c2c2
       - ElementName: Sovereign_Static_Voice
         ObjectType: 3
         guid: 89e91c11f82a88488d7a62490cf8b8de
-      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Sovereign_Static_Voice
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Static/Sovereign_Static_Voice
       maxAttenuation: 0
       maxDuration: 1.6113958
       minDuration: 1.6113958
+    - name: Sovereign_Static_Warn
+      guid: 51a71acdab86784496b6f132f5fd4ebe
+      id: 874665899
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Static
+        ObjectType: 4
+        guid: d29a09d8b078c14591b59bf74ec8c2c2
+      - ElementName: Sovereign_Static_Warn
+        ObjectType: 3
+        guid: 51a71acdab86784496b6f132f5fd4ebe
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Static/Sovereign_Static_Warn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sovereign_Swipe_Attack
+      guid: b3d0b0dd12601b4fa48f1f028b29c814
+      id: 1848607255
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Swipe
+        ObjectType: 4
+        guid: 43424495c83e8f49bc625c9141012747
+      - ElementName: Sovereign_Swipe_Attack
+        ObjectType: 3
+        guid: b3d0b0dd12601b4fa48f1f028b29c814
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Swipe/Sovereign_Swipe_Attack
+      maxAttenuation: 0
+      maxDuration: 3.0631745
+      minDuration: 3.0314367
     - name: Sovereign_Swipe_Voice
       guid: 51a1f55c6293cf4197342418e0c85876
       id: 3134934187
@@ -2410,10 +2480,13 @@ MonoBehaviour:
       - ElementName: Laser
         ObjectType: 4
         guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Swipe
+        ObjectType: 4
+        guid: 43424495c83e8f49bc625c9141012747
       - ElementName: Sovereign_Swipe_Voice
         ObjectType: 3
         guid: 51a1f55c6293cf4197342418e0c85876
-      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Sovereign_Swipe_Voice
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Swipe/Sovereign_Swipe_Voice
       maxAttenuation: 0
       maxDuration: 1.605375
       minDuration: 1.605375
@@ -2466,6 +2539,35 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4.1879168
       minDuration: 4.1879168
+    - name: Static
+      guid: d29a09d8b078c14591b59bf74ec8c2c2
+      id: 1409504247
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Static
+        ObjectType: 4
+        guid: d29a09d8b078c14591b59bf74ec8c2c2
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Static
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: StopAll
       guid: 00012a5e48518c4480a99fe4f208a3c0
       id: 3086540886
@@ -2480,6 +2582,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 00012a5e48518c4480a99fe4f208a3c0
       Path: Events/Default Work Unit/StopAll
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StopAllGlobal
+      guid: c1b319e024452f42a5faf18428bac805
+      id: 2127894543
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: StopAllGlobal
+        ObjectType: 3
+        guid: c1b319e024452f42a5faf18428bac805
+      Path: Events/Default Work Unit/StopAllGlobal
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -2618,6 +2737,35 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.3331831
       minDuration: 0.33126414
+    - name: Swipe
+      guid: 43424495c83e8f49bc625c9141012747
+      id: 2420075157
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ba66e1f0758b95479cbda4a5669b6001
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: aae72b5226c18849a09867aa8cae3c3b
+      - ElementName: Boss
+        ObjectType: 4
+        guid: a43abc8dc00bb148bd70aaa969f8183f
+      - ElementName: Sovereign
+        ObjectType: 4
+        guid: 63cea0a92608db41844b464427109ab5
+      - ElementName: Laser
+        ObjectType: 4
+        guid: 996d0efeeb366d4fad1721b1178a7595
+      - ElementName: Swipe
+        ObjectType: 4
+        guid: 43424495c83e8f49bc625c9141012747
+      Path: Events/Default Work Unit/Enemy/Boss/Sovereign/Laser/Swipe
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Temple_Quake
       guid: 0962cd70193f664fa7dab36c57dbde7d
       id: 79843292
@@ -3380,7 +3528,7 @@ MonoBehaviour:
     m_lastTime: -8584273296894031812
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000040000000500000006000000080000000b0000000e0000001600000024000000330000004f0000007000000074000000
+  ExpandedWaapiItemIds: 0200000004000000050000000600000007000000080000000a0000000b0000000e0000001000000011000000120000001600000024000000330000004f0000007000000074000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
